@@ -13,15 +13,15 @@ function Services() {
         </div>
 
         {/* Grid items with centered text */}
-        <Link to="/" className="text-center">Accueil</Link>
+        <Link to="/" className="text-center hover:font-bold">Accueil</Link>
 
-        <Link to="/" className="text-center">A propos</Link>
+        <Link to="/" className="text-center hover:font-bold">A propos</Link>
 
-        <Link to="/" className="text-center">Nos Services</Link>
+        <Link to="/" className="text-center hover:font-bold">Nos Services</Link>
 
-        <Link to="/" className="text-center">Nos Références</Link>
+        <Link to="/" className="text-center hover:font-bold">Nos Références</Link>
 
-        <Link to="/" className="text-center">Contactez-nous</Link>
+        <Link to="/" className="text-center hover:font-bold">Contactez-nous</Link>
       </div>
     </div>
   );
