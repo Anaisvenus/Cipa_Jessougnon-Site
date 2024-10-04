@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom";
-// import logo from "../image/yinEtYang.png";
+import logo from "../image/logo.png";
 
 function NavBar() {
     return (
@@ -7,45 +7,40 @@ function NavBar() {
             <nav className="z-0 relative mb-12"
                 x-data="{open:false,menu:false, lokasi:false}"
             >
-                {/* <div className="flex bg-white mb-4 text-end">
-                        <div>
-                            <img
-                                className="h-20"
-                                src={logo}
-                                alt="Logo"
-                            />
-                            <h1 className="text-base">𝓛𝓮 𝓳𝓪𝓻𝓭𝓲𝓷 𝓭𝓮𝓼 𝓶𝓸𝓽𝓼</h1>
-                        </div>
-                        <ul className="flex flex-nowrap">
-                        <Link
-                                to="/"
-                                className="ml-10 mt-6">
-                                <span className="">𝓐𝓬𝓬𝓾𝓮𝓲𝓵</span>
-                            </Link>
-                            <Link
-                                to="/user"
-                                className="ml-10 mt-6">
-                                <span className="">𝓤𝓽𝓲𝓵𝓲𝓼𝓪𝓽𝓮𝓾𝓻</span>
-                            </Link>
-                            <Link
-                                to="/menu"
-                                className="ml-10 mt-6">
-                                <span className="">𝓜𝓮𝓷𝓾</span>
-                            </Link>
-                            <Link
-                                to="/apropos"
-                                className="ml-10 mt-6">
-                                <span className="">𝓐 𝓹𝓻𝓸𝓹𝓸𝓼</span>
-                            </Link>
-                        </ul>
-                        <ul className="flex">
-                            <Link
-                                to="/login"
-                                className="absolute top-0 right-0 h-48 w-48 mt-6">
-                                <span className="">𝓢𝓮 𝓬𝓸𝓷𝓷𝓮𝓬𝓽𝓮𝓻</span>
-                            </Link>
-                        </ul>
-                </div> */}
+                <div className="flex justify-center items-center space-x-10">
+        
+                    {/* Logo positioned within the grid */}
+                    <div>
+                        <img className="h-32 mx-auto" src={logo} alt="Logo" />
+                    </div>
+
+                    {/* Grid items with centered text */}
+                    <Link 
+                    to="/" className="text-center font-medium hover:font-bold transition-all min-w-0">
+                    Accueil
+                    </Link>
+
+                    <Link 
+                    to="/" className="text-center font-medium hover:font-bold transition-all min-w-0">
+                    A propos
+                    </Link>
+
+                    <Link 
+                    to="/" className="text-center font-medium hover:font-bold transition-all min-w-0">
+                    Nos Services
+                    </Link>
+
+                    <Link 
+                    to="/" className="text-center font-medium hover:font-bold transition-all min-w-0">
+                    Nos Références
+                    </Link>
+
+                    <Link 
+                    to="/" className="text-center font-medium hover:font-bold transition-all min-w-0">
+                    Contactez-nous
+                    </Link>
+
+                </div>
             </nav>
         </>
     );
