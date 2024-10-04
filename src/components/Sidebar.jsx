@@ -6,7 +6,7 @@ function Sidebar() {
             <aside className="flex-none w-36 m-5 " aria-label="Sidebar">
                 <div className="bg-gray-300 rounded-lg block h-screen">
 
-                    {/* HOME */}
+                    {/* LandingPage */}
                     <ul>
                         <Link
                             to="/"
