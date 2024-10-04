@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom";
-import logo from "../image/yinEtYang.png";
+// import logo from "../image/yinEtYang.png";
 
 function NavBar() {
     return (
@@ -7,7 +7,7 @@ function NavBar() {
             <nav className="z-0 relative mb-12"
                 x-data="{open:false,menu:false, lokasi:false}"
             >
-                <div className="flex bg-white mb-4 text-end">
+                {/* <div className="flex bg-white mb-4 text-end">
                         <div>
                             <img
                                 className="h-20"
@@ -45,7 +45,7 @@ function NavBar() {
                                 <span className="">𝓢𝓮 𝓬𝓸𝓷𝓷𝓮𝓬𝓽𝓮𝓻</span>
                             </Link>
                         </ul>
-                </div>
+                </div> */}
             </nav>
         </>
     );
