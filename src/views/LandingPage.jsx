@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Accueil from "./Accueil";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import devisbutton from "../image/Assets Mockup Cipa's site/Frame 4.png";
