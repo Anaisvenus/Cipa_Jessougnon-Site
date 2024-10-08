@@ -45,21 +45,21 @@ function LandingPage() {
       </div>
 
       {/* About us on the LandingPage */}
-      <div className="relative mt-20">
+      <div className="relative mt-12">
         {/* Image de fond */}
         <img 
-          className="w-full h-3/6 transform -translate-y-10 z-0 opacity-50" 
+          className="w-full h-3/6 transform -translate-y-10 z-0 opacity-50 bg-grey-200" 
           src={thumbsUp} 
           alt="Thumbs Up Woman" 
         />
+        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-black opacity-30" />
 
         {/* Texte superposé à l'image */}
-        <div className="absolute top-56 left-0 z-10">
-          <img className="h-96" src={logo} alt="Logo" />
-        </div>
+        <img className="absolute bottom-24 left-0 z-10" style={{ height: '800px', width: '600px' }} src={logo} alt="Logo" />
 
-        <h1 className="absolute top-20 right-80 text-7xl font-bold z-10 p-10 text-black">A propos</h1>
-        <h3 className="absolute top-48 right-0 text-2xl z-10 p-10 text-start text-black">
+
+        <h1 className="absolute top-20 right-80 text-7xl font-bold z-10 p-10 text-white">A propos</h1>
+        <h3 className="absolute top-48 right-28 text-xl z-10 p-10 text-start text-white">
           CIPA JESSOUGNON SA est une société spécialisée<br />
           dans les domaines del'Entretien et Nettoyage,<br />
           désinfection et dératisation des espaces publics et<br />
