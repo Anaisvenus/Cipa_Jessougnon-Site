@@ -12,6 +12,8 @@ import services4 from "../image/Assets Mockup Cipa's site/Group 27.png";
 import services5 from "../image/Assets Mockup Cipa's site/Group 28.png";
 import rectangle from "../image/Assets Mockup Cipa's site/Rectangle 7.png";
 import partners from "../image/Assets Mockup Cipa's site/partenaires CIPA 1.png";
+import maskman from "../image/Assets Mockup Cipa's site/Mask group.png";
+import whiteman from "../image/Assets Mockup Cipa's site/Flyer service de nettoyage promotion bleu (4).png";
 
 function LandingPage() {
   return (
@@ -59,7 +61,7 @@ function LandingPage() {
           src={thumbsUp} 
           alt="Thumbs Up Woman" 
         />
-        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-black opacity-30" />
+        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-neutral-950 opacity-50" />
 
         {/* Texte superposé à l'image */}
         <img className="absolute bottom-24 left-0 z-10" style={{ height: '800px', width: '600px' }} src={logo} alt="Logo" />
@@ -85,7 +87,7 @@ function LandingPage() {
       {/* Services on the LandingPage */}
       <div className="relative flex flex-col justify-center items-center">
         {/* Section Title */}
-        <h1 className="text-7xl font-bold z-10 p-10 text-black  text-start">Nos Services</h1>
+        <h1 className="text-7xl font-bold z-10 p-10 text-black text-start">Nos Services</h1>
 
         {/* First Row of Services */}
         <div className="flex justify-center items-center space-x-16 mt-20"> {/* Use `space-x-16` for spacing */}
@@ -160,31 +162,80 @@ function LandingPage() {
       </div>
 
       {/* Partners on the LandingPage */}
-      <div className="relative mt-14">
+      <div className="relative absolute top-24">
         {/* Image de fond */}
         <img 
-          className="w-full h-auto transform -translate-y-10 z-0 opacity-50 bg-grey-200" 
+          className="w-full transform -translate-y-10 z-0" style={{ height: '900px', width: '1600px' }} 
           src={rectangle} 
           alt="Thumbs Up Woman" 
         />
-        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-zinc-900" />
-
-        <h1 className="absolute top-0 right-40 text-7xl font-bold z-10 p-10 text-white">Nos Références</h1>
+        <h1 className="absolute top-0 right-20 text-7xl font-bold z-10 p-10 text-white">Nos Références</h1>
         {/* Texte superposé à l'image */}
-        <img className="absolute top-28 left-10 z-10" style={{ height: '700px', width: '1400px' }} src={partners} alt="Logo" />
-
-
+        <img className="absolute top-32 left-10 z-10" style={{ height: '700px', width: '1400px' }} src={partners} alt="Logo" />
       </div>
 
+      {/* why us? on the LandingPage */}
+      <div>
+        <div className="relative">
+          <h1 className="absolute top-20 right-20 text-7xl font-bold z-10 p-10 text-black">Pourquoi nous choisir?</h1>
 
-      {/* </div> */}
+          <div className="relative absolute top-60">
+            <img 
+              className="z-10 absolute left-72" 
+              style={{ height: '500px', width: '400px' }} 
+              src={maskman} 
+              alt="Logo" 
+            />
+            
+            <div className="grid grid-col-1 gap-20 absolute right-60 top-20">
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">1</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'un centre de formation en Hygiène <br />et en Assistance Domestique.</h1>
+              </div>
+              
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">2</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous mettons un accent particulier sur l'hygiène corporelle <br />et vestimentaire de l'ensemble de notre personnel.</h1>
+              </div>
+              
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">3</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous évaluons de façon rigoureuse et méticuleuse les besoins <br />qualitatifs et quantitatifs de nos services.</h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* <div className="">
+          <div className="relative">            
+            <div className="grid grid-col-1 gap-20 absolute left-72 top-72">
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">4</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'une ligne d'appel Service Clientèle <br />et Contentieux ouverte en permanence.</h1>
+              </div>
+              
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">5</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'une documentation scientifique et <br />technique pour toutes nos interventions.</h1>
+              </div>
+              
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">6</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous sommes joignables via les réseaux sociaux <br />Whatsapp, Facebook, Twitter et Instagram.</h1>
+              </div>
+            </div>
+            <img 
+              className="z-10 absolute top-48 right-72" 
+              style={{ height: '500px', width: '400px' }} 
+              src={whiteman} 
+              alt="Logo" 
+            />
+          </div>
 
 
-
-      {/* Partners on the LandingPage */}
-      {/* <div>
-        <h1>Nos Références</h1>
-      </div> */}
+        </div> */}
+      </div>
 
     </div>
   );
