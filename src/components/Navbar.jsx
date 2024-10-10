@@ -14,29 +14,39 @@ function NavBar() {
                         <img className="h-32 mx-auto" src={logo} alt="Logo" />
                     </Link>
                     {/* Home Button */}
-                    <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
-                        Accueil
-                    </button>
+                    <Link to="/home">
+                        <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
+                            Accueil
+                        </button>
+                    </Link>
 
                     {/* Search Button */}
-                    <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
-                        A propos
-                    </button>
+                    <Link to="/aboutus">
+                        <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
+                            A propos
+                        </button>
+                    </Link>
 
                     {/* User Profile Button */}
-                    <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
-                        Nos Services
-                    </button>
+                    <Link to="/services">
+                        <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
+                            Nos Services
+                        </button>
+                    </Link>
 
                     {/* Shopping Cart Button */}
-                    <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
-                        Nos Références
-                    </button>
+                    <Link to="/partners">
+                        <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
+                            Nos Références
+                        </button>
+                    </Link>
 
                     {/* Contact Button */}
-                    <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
-                        Contactez-nous
-                    </button>
+                    <Link to="/contactus">
+                        <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
+                            Contactez-nous
+                        </button>
+                    </Link>
                 </div>
 
                 {/* <div className="flex justify-center items-center space-x-10">
