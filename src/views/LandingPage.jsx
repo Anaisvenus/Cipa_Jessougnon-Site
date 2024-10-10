@@ -15,6 +15,12 @@ import partners from "../image/Assets Mockup Cipa's site/partenaires CIPA 1.png"
 import maskman from "../image/Assets Mockup Cipa's site/Mask group.png";
 import whiteman from "../image/Assets Mockup Cipa's site/Flyer service de nettoyage promotion bleu (4).png";
 
+import company from '../image/company.gif';
+import indstry from '../image/industry.gif';
+import desherbage from '../image/désherbage.gif';
+import consultaion from '../image/consultation.gif';
+import products from '../image/products.gif';
+
 function LandingPage() {
   return (
     <div className="LandingPage h-screen">
@@ -42,7 +48,21 @@ function LandingPage() {
               salons d' hygiène en Europe.</h3>
 
             <div>
-              <img className="h-14 mt-16" src={devisbutton} alt="Logo" />
+              {/* <img className="h-14 mt-16" src={devisbutton} alt="Logo" /> */}
+              <button
+                className="mt-10 cursor-pointer text-white font-bold relative text-[14px] w-[12em] 
+                h-[3em] text-center bg-lime-500 bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy
+                hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px]
+                before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r
+                before:from-lime-500 before:from-10% before:via-lime-300 before:via-30% before:to-lime-700
+                before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl
+                before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%]
+                active:bg-lime-700 focus:ring-lime-700 hover:brightness-110 hover:-translate-y-[1px]
+                hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+                Demander un devis
+              </button>
+
+              
             </div>
             <br />
         </div>
@@ -52,6 +72,7 @@ function LandingPage() {
           <img className="h-4/6 mx-auto" src={aspirateur} alt="Logo" />
         </div>
       </div>
+      {/* <img src={animationGif} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} /> */}
 
       {/* About us on the LandingPage */}
       <div className="relative mt-12">
@@ -93,11 +114,9 @@ function LandingPage() {
         <div className="flex justify-center items-center space-x-16 mt-20"> {/* Use `space-x-16` for spacing */}
           <div className="flex flex-col items-center"> {/* Flex column to center text under image */}
             <Link to="/services">
-              <img 
-                className="h-40 w-auto" // Adjust height as needed
-                src={services1} 
-                alt="Service 1" 
-              />
+            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+              <img src={company} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
+            </div>
             </Link>
             <Link to="/services">
               <h1 className="mt-2 text-lg font-semibold">Entretien et Nettoyage de Bâtiment</h1> {/* Centered text */}
@@ -106,11 +125,9 @@ function LandingPage() {
 
           <div className="flex flex-col items-center"> 
             <Link to="/services">
-              <img 
-                className="h-40 w-auto" // Adjust height as needed
-                src={services2} 
-                alt="Service 2" 
-              />
+            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+              <img src={indstry} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
+            </div>
             </Link>
             <Link to="/services">
               <h1 className="mt-2 text-lg font-semibold">Entretien et nettoyage Industriel</h1> {/* Centered text */}
@@ -119,11 +136,9 @@ function LandingPage() {
 
           <div className="flex flex-col items-center">
             <Link to="/services">
-              <img 
-                className="h-40 w-auto" // Adjust height as needed
-                src={services3} 
-                alt="Service 3" 
-              />
+            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+              <img src={desherbage} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
+            </div>
             </Link>
             <Link to="/services">
               <h1 className="mt-2 text-lg font-semibold">Désherbage mécanique, chimique et Bio</h1> {/* Centered text */}
@@ -135,11 +150,9 @@ function LandingPage() {
         <div className="flex justify-center items-center space-x-16 mt-16"> {/* Use `space-x-16` for spacing */}
           <div className="flex flex-col items-center"> 
             <Link to="/services">
-              <img 
-                className="h-40 w-auto" // Adjust height as needed
-                src={services4} 
-                alt="Service 4" 
-              />
+            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+              <img src={consultaion} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
+            </div>
             </Link>
             <Link to="/services">
               <h1 className="mt-2 text-lg font-semibold">Consultation et Expertise en Hygiène</h1> {/* Centered text */}
@@ -148,11 +161,9 @@ function LandingPage() {
 
           <div className="flex flex-col items-center"> 
             <Link to="/services">
-              <img 
-                className="h-40 w-auto" // Adjust height as needed
-                src={services5} 
-                alt="Service 5" 
-              />
+              <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+                <img src={products} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
+              </div>
             </Link>
             <Link to="/services">
               <h1 className="mt-2 text-lg font-semibold">Ventes de matériels et produits de désinfection</h1> {/* Centered text */}
@@ -204,37 +215,37 @@ function LandingPage() {
               </div>
             </div>
           </div>
-
         </div>
 
-        {/* <div className="">
-          <div className="relative">            
-            <div className="grid grid-col-1 gap-20 absolute left-72 top-72">
-              <div className=" flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">4</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'une ligne d'appel Service Clientèle <br />et Contentieux ouverte en permanence.</h1>
-              </div>
-              
-              <div className=" flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">5</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'une documentation scientifique et <br />technique pour toutes nos interventions.</h1>
-              </div>
-              
-              <div className=" flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">6</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous sommes joignables via les réseaux sociaux <br />Whatsapp, Facebook, Twitter et Instagram.</h1>
-              </div>
-            </div>
+        
+        <div className="relative">
+          <div className="absolute top-60">
             <img 
-              className="z-10 absolute top-48 right-72" 
+              className="z-10 absolute right-72" 
               style={{ height: '500px', width: '400px' }} 
               src={whiteman} 
               alt="Logo" 
             />
+            
+            <div className="grid grid-col-1 gap-20 absolute left-60 top-20">
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">1</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'un centre de formation en Hygiène <br />et en Assistance Domestique.</h1>
+              </div>
+              
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">2</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous mettons un accent particulier sur l'hygiène corporelle <br />et vestimentaire de l'ensemble de notre personnel.</h1>
+              </div>
+              
+              <div className=" flex items-center">
+                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">3</div>
+                <h1 className="ml-2 text-lime-500 font-semibold">Nous évaluons de façon rigoureuse et méticuleuse les besoins <br />qualitatifs et quantitatifs de nos services.</h1>
+              </div>
+            </div>
           </div>
+        </div>
 
-
-        </div> */}
       </div>
 
     </div>
