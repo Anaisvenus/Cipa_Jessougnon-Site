@@ -67,7 +67,7 @@ function AboutUs() {
           </div>
         </div>
 
-        <h1 className="text-4xl font-bold mb-10">Nos Valeurs</h1>
+        <h1 className="text-4xl font-bold mb-10 text-black font-bold text-4xl">Nos Valeurs</h1>
 
         <div className="grid grid-cols-2 gap-10 w-full rounded-2xl text-white p-10" style={{ width: '1400px', backgroundColor: '#b6d023' }}>
           {/* First Column */}
