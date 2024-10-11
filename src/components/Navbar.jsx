@@ -8,13 +8,13 @@ function NavBar() {
                 x-data="{open:false,menu:false, lokasi:false}"
             >
 
-                <div className="flex bg-lime-400 w-full h-24 items-center justify-around shadow-[rgba(0,0,0,0.35)_0px_5px_15px,rgba(163,230,53,0.5)_5px_10px_15px]">
+                <div className="flex w-full h-24 items-center justify-around shadow-[rgba(0,0,0,0.35)_0px_5px_15px,rgba(163,230,53,0.5)_5px_10px_15px]" style={{ backgroundColor: '#b6d023' }}>
                     <Link 
                         to="/">
                         <img className="h-32 mx-auto" src={logo} alt="Logo" />
                     </Link>
                     {/* Home Button */}
-                    <Link to="/home">
+                    <Link to="/">
                         <button className="rounded-full bg-transparent flex items-center justify-end text-white hover:-translate-y-1 transition-transform duration-300">
                             Accueil
                         </button>
