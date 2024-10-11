@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import logo from "../image/logo.png";
 import { Link} from "react-router-dom";
 import aspirateur from "../image/Assets Mockup Cipa's site/apirateur.png";
@@ -105,7 +106,7 @@ function LandingPage() {
         <div className="flex justify-center items-center space-x-16 mt-20"> {/* Use `space-x-16` for spacing */}
           <div className="flex flex-col items-center"> {/* Flex column to center text under image */}
             <Link to="/services">
-            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+            <div className="rounded-full border w-40 h-40 flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>
               <img src={company} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
             </div>
             </Link>
@@ -116,7 +117,7 @@ function LandingPage() {
 
           <div className="flex flex-col items-center"> 
             <Link to="/services">
-            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+            <div className="rounded-full border w-40 h-40 flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>
               <img src={indstry} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
             </div>
             </Link>
@@ -127,7 +128,7 @@ function LandingPage() {
 
           <div className="flex flex-col items-center">
             <Link to="/services">
-            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+            <div className="rounded-full border w-40 h-40 flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>
               <img src={desherbage} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
             </div>
             </Link>
@@ -141,7 +142,7 @@ function LandingPage() {
         <div className="flex justify-center items-center space-x-16 mt-16"> {/* Use `space-x-16` for spacing */}
           <div className="flex flex-col items-center"> 
             <Link to="/services">
-            <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+            <div className="rounded-full border w-40 h-40 flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>
               <img src={consultaion} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
             </div>
             </Link>
@@ -152,7 +153,7 @@ function LandingPage() {
 
           <div className="flex flex-col items-center"> 
             <Link to="/services">
-              <div className="rounded-full border bg-lime-400 w-40 h-40 flex justify-center items-center">
+              <div className="rounded-full border w-40 h-40 flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>
                 <img src={products} alt="Animated GIF" style={{ width: '100px', height: 'auto' }} />
               </div>
             </Link>
@@ -194,17 +195,17 @@ function LandingPage() {
             <div className="grid grid-cols-1 gap-20 absolute right-60 top-20">
               <div className="flex items-center">
                 <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">1</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'un centre de formation en Hygiène <br />et en Assistance Domestique.</h1>
+                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous disposons d'un centre de formation en Hygiène <br />et en Assistance Domestique.</h1>
               </div>
               
               <div className="flex items-center">
                 <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">2</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous mettons un accent particulier sur l'hygiène corporelle <br />et vestimentaire de l'ensemble de notre personnel.</h1>
+                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous mettons un accent particulier sur l'hygiène corporelle <br />et vestimentaire de l'ensemble de notre personnel.</h1>
               </div>
               
               <div className="flex items-center">
                 <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">3</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous évaluons de façon rigoureuse et méticuleuse les besoins <br />qualitatifs et quantitatifs de nos services.</h1>
+                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous évaluons de façon rigoureuse et méticuleuse les besoins <br />qualitatifs et quantitatifs de nos services.</h1>
               </div>
             </div>
           </div>
@@ -217,17 +218,17 @@ function LandingPage() {
             <div className="grid grid-cols-1 gap-20 absolute left-60 top-20">
               <div className="flex items-center">
                 <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">4</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'une ligne d'appel Service Clientèle <br />et Contentieux ouverte en permanence</h1>
+                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous disposons d'une ligne d'appel Service Clientèle <br />et Contentieux ouverte en permanence</h1>
               </div>
               
               <div className="flex items-center">
                 <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">5</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous disposons d'une documentation scientifique et <br />technique pour toutes nos interventions</h1>
+                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous disposons d'une documentation scientifique et <br />technique pour toutes nos interventions</h1>
               </div>
               
               <div className="flex items-center">
                 <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">6</div>
-                <h1 className="ml-2 text-lime-500 font-semibold">Nous sommes joignables via les réseaux sociaux <br />Whatsapp, Facebook, Twitter et Instagram</h1>
+                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous sommes joignables via les réseaux sociaux <br />Whatsapp, Facebook, Twitter et Instagram</h1>
               </div>
             </div>
             
@@ -241,7 +242,7 @@ function LandingPage() {
 
           {/* Ask for a devis button, placed after the image */}
           <div className="relative top-[600px] bg-zinc-900 w-full h-72 flex justify-center items-center">
-            <button className="text-white bg-lime-500 w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition">Demander un devis</button>
+            <button className="text-white w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition" style={{ backgroundColor: '#b6d023' }}>Demander un devis</button>
           </div>
 
           {/* Footer */}
