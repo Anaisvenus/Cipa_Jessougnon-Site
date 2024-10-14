@@ -1,36 +1,25 @@
-.player {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dots {
-    display: flex;
-    align-items: center;
-    /* list-style: none; */
-    height: 100px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dots li {
-    border-radius: 2px;
-    margin: 0 2px;
-    width: 16px;
-    height: 16px;
-    background-color: #7e3890;
-  }
-  
-  button {
-    background-color: #7e3890;
-    border-radius: 2px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    padding: 4px 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100px;
-    margin-top: 24px;
-  }
+/* From Uiverse.io by suda-code */ 
+.buttondevis {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #b6d023;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.buttondevis:hover {
+  background-color: #6fff7b;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.buttondevis:active {
+  background-color: #3dcf64;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
