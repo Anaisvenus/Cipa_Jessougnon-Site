@@ -224,7 +224,7 @@ function Services() {
 
       {/* Atouts */}
       <h1 className="text-4xl font-bold mb-10 mt-10 ml-10 text-black font-bold text-4xl transition-colors duration-300 hover:text-lime-500">Nos Atouts</h1>
-      <div className="absolute left-10 w-full rounded-2xl text-white p-10" style={{ width: '1400px', backgroundColor: '#b6d023' }}>
+      <div className="absolute left-10 w-full rounded-2xl text-black p-10 bg-lime-200" style={{ width: '1400px' }}>
         <ul className="space-y-2 font-bold text-xl">
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
@@ -305,7 +305,8 @@ function Services() {
 
       
       {/* Footer */}
-      <div className="relative top-[700px] bg-zinc-500 w-full h-96 grid grid-cols-3 gap-10 flex justify-center items-center">
+      <div className="relative top-[700px] bg-zinc-500 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
+      <img className="h-32 mx-auto" src={logo} alt="Logo" />
         <div className="text-white flex justify-center items-center">
           <h1>Nous sommes une entreprise de nettoyage <br />
             professionnelle dédiée à fournir des services <br />

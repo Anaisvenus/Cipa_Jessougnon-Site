@@ -42,10 +42,11 @@ function LandingPage() {
               salons d' hygiène en Europe.</h3>
 
             <div>
-              {/* <img className="h-14 mt-16" src={devisbutton} alt="Logo" /> */}
               <button
-                className="buttondevis mt-10">
-                Demander un devis
+                className="mt-10 w-60 text-white py-2 px-4 rounded-full hover:bg-lime-400 transition duration-300"
+                type="submit"  href="tel:+229 62 31 5172"
+                style={{ backgroundColor: '#b6d023' }}>
+                Contactez-nous
               </button>
 
               
@@ -235,11 +236,15 @@ function LandingPage() {
 
           {/* Ask for a devis button, placed after the image */}
           <div className="relative top-[600px] bg-zinc-900 w-full h-72 flex justify-center items-center">
-            <button className="text-white w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition" style={{ backgroundColor: '#b6d023' }}>Demander un devis</button>
+            <button className="text-white w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition" 
+            type="submit"  href="tel:+229 62 31 5172"
+            style={{ backgroundColor: '#b6d023' }}>
+            Contactez-nous </button>
           </div>
 
           {/* Footer */}
-          <div className="relative top-[600px] bg-zinc-500 w-full h-96 grid grid-cols-3 gap-10 flex justify-center items-center">
+          <div className="relative top-[100px] bg-zinc-500 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
+            <img className="h-32 mx-auto" src={logo} alt="Logo" />
             <div className="text-white flex justify-center items-center">
               <h1>Nous sommes une entreprise de nettoyage <br />
                professionnelle dédiée à fournir des services <br />

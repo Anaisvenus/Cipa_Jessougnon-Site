@@ -25,7 +25,8 @@ function Partners() {
 
       
       {/* Footer */}
-      <div className="relative top-[100px] bg-zinc-500 w-full h-96 grid grid-cols-3 gap-10 flex justify-center items-center">
+      <div className="relative top-[100px] bg-zinc-500 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
+        <img className="h-32 mx-auto" src={logo} alt="Logo" />
         <div className="text-white flex justify-center items-center">
           <h1>Nous sommes une entreprise de nettoyage <br />
             professionnelle dédiée à fournir des services <br />
