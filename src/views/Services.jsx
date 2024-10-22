@@ -22,6 +22,11 @@ import medidecon from "../image/products/9.png";
 import papier from "../image/products/10.png";
 import sopalin from "../image/products/11.png";
 import lingettes from "../image/products/12.png";
+import des_cipa from "../image/Produits_photos/désinfectant.png";
+import dist_papier_cipa from "../image/Produits_photos/dist_papier.png";
+import dist_savon_cipa from "../image/Produits_photos/dist_savon.png";
+import lingettes_cipa from "../image/Produits_photos/lingettes_1.png";
+import essui_cipa from "../image/Produits_photos/essuitout.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
@@ -125,7 +130,7 @@ function Services() {
 
         {/* Les désinfectants de mains */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={sanitizer} alt="Logo" />
+          <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les désinfectants de mains</span>
           </p>
@@ -149,7 +154,7 @@ function Services() {
 
         {/* Les distributeurs de savons antimicrobiens */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={distsavon} alt="Logo" />
+          <img className="h-60 mx-auto" src={dist_savon_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les distributeurs de savons antimicrobiens</span>
           </p>
@@ -165,7 +170,7 @@ function Services() {
 
         {/* Les produits de désinfection et de décontamination */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={desinfections} alt="Logo" />
+          <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les produits de désinfection et de décontamination d’espace (Purif’Air)</span>
           </p>
@@ -205,7 +210,7 @@ function Services() {
 
         {/* Les papiers essuie-mains */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={sopalin} alt="Logo" />
+          <img className="h-60 mx-auto" src={essui_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les papiers essuie-mains</span>
           </p>
@@ -213,7 +218,7 @@ function Services() {
 
         {/* Les lingettes désinfectantes */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={lingettes} alt="Logo" />
+          <img className="h-60 mx-auto" src={lingettes_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les lingettes désinfectantes</span>
           </p>

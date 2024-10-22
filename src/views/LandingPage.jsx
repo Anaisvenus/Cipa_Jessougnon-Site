@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import logo from "../image/logo.png";
 import { Link} from "react-router-dom";
 import aspirateur from "../image/Assets Mockup Cipa's site/apirateur.png";
@@ -35,10 +34,10 @@ function LandingPage() {
           </div>
           <br />
 
-          <h3>Cipa JESSOUGNON,est une société spécialisée dans les domaines de l'Entretien et <br />
+          <h3>CIPA JESSOUGNON, est une société spécialisée dans les domaines de l'Entretien et <br />
               Nettoyage , désinfection et dératisation des espaces publics et privés. Elle est dotée <br />
-              d'un personnel qualifié, rompu à la tâche, avec des équipements de dernière génération, <br />
-              une solide expérience professionnelle de près de 20 ans et par ticipe chaque année aux <br />
+              d'un personnel qualifié, rompu à la tâche, avec des équipements de dernière génération. <br />
+              Elle a une solide expérience professionnelle de près de 20 ans et participe chaque année <br /> aux
               salons d' hygiène en Europe.</h3>
 
             <div>
@@ -77,17 +76,17 @@ function LandingPage() {
         <h1 className="absolute top-20 right-80 text-7xl font-bold z-10 p-10 text-white">A propos</h1>
         <h3 className="absolute top-48 right-28 text-xl z-10 p-10 text-start text-white">
           CIPA JESSOUGNON SA est une société spécialisée<br />
-          dans les domaines del'Entretien et Nettoyage,<br />
+          dans les domaines de l'Entretien et Nettoyage,<br />
           désinfection et dératisation des espaces publics et<br />
           privés. Elle est dotée d'un personnel qualifié, rompu<br />
-          à la tâche, avec des équipements de dernière génération,<br />
-          une solide expérience professionnelle de près de 20 ans<br />
+          à la tâche, avec des équipements de dernière génération.<br />
+          Elle a une solide expérience professionnelle de près de 20 ans<br />
           et participe chaque année aux salons d'hygiène en Europe.<br />
-          L'ensemble de nos prestations respectent les principes de<br />
-          nettoyage dans les Etablissement de grandes affluences et<br />
-          de luxe. Elles allient la protection à l'usage des techniques<br />
-          douces et procèdent à la réalisation de tests en cas de<br />
-          doute, du vertical à l'horizontal, du propre vers le sale <br />à reculons.<br />
+          L'ensemble de nos prestations respecte les principes de<br />
+          nettoyage dans les Etablissements de grandes affluences et<br />
+          de luxe. Nos prestations allient la protection à l'usage des<br /> techniques
+          douces et procèdent à la réalisation de tests en <br />cas de
+          doute, du vertical à l'horizontal, du propre vers  <br />le sale à reculons.<br />
         </h3>
       </div>
 
@@ -186,20 +185,20 @@ function LandingPage() {
               alt="Logo" 
             />
             
-            <div className="grid grid-cols-1 gap-20 absolute right-60 top-20">
+            <div className="grid grid-cols-1 gap-20 absolute right-14 top-20">
               <div className="flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">1</div>
-                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous disposons d'un centre de formation en Hygiène <br />et en Assistance Domestique.</h1>
+                <div className="rounded-full border w-10 h-10 text-black text-center flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>1</div>
+                <h1 className="ml-2 font-semibold text-zinc-800 text-2xl">Nous disposons d'un centre de formation en Hygiène <br />et en Assistance Domestique.</h1>
               </div>
               
               <div className="flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">2</div>
-                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous mettons un accent particulier sur l'hygiène corporelle <br />et vestimentaire de l'ensemble de notre personnel.</h1>
+                <div className="rounded-full border w-10 h-10 text-black text-center flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>2</div>
+                <h1 className="ml-2 font-semibold text-zinc-800 text-2xl">Nous mettons un accent particulier sur l'hygiène<br /> corporelle et vestimentaire de l'ensemble de notre personnel.</h1>
               </div>
               
               <div className="flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">3</div>
-                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous évaluons de façon rigoureuse et méticuleuse les besoins <br />qualitatifs et quantitatifs de nos services.</h1>
+                <div className="rounded-full border w-10 h-10 text-black text-center flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>3</div>
+                <h1 className="ml-2 font-semibold text-zinc-800 text-2xl">Nous évaluons de façon rigoureuse et méticuleuse  <br />les besoins qualitatifs et quantitatifs de nos services.</h1>
               </div>
             </div>
           </div>
@@ -209,20 +208,20 @@ function LandingPage() {
         <div className="relative top-[800px]">
           {/* Second Section */}
           <div className="">
-            <div className="grid grid-cols-1 gap-20 absolute left-60 top-20">
+            <div className="grid grid-cols-1 gap-20 absolute left-14 top-20">
               <div className="flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">4</div>
-                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous disposons d'une ligne d'appel Service Clientèle <br />et Contentieux ouverte en permanence</h1>
+                <div className="rounded-full border w-10 h-10 text-black text-center flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>4</div>
+                <h1 className="ml-2 font-semibold text-zinc-800 text-2xl">Nous disposons d'une ligne d'appel Service Clientèle <br />et Contentieux ouverte en permanence</h1>
               </div>
               
               <div className="flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">5</div>
-                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous disposons d'une documentation scientifique et <br />technique pour toutes nos interventions</h1>
+                <div className="rounded-full border w-10 h-10 text-black text-center flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>5</div>
+                <h1 className="ml-2 font-semibold text-zinc-800 text-2xl">Nous disposons d'une documentation scientifique et <br />technique pour toutes nos interventions</h1>
               </div>
               
               <div className="flex items-center">
-                <div className="rounded-full border bg-zinc-900 w-10 h-10 text-white text-center flex justify-center items-center">6</div>
-                <h1 className="ml-2 font-semibold" style={{ color: '#b6d023' }}>Nous sommes joignables via les réseaux sociaux <br />Whatsapp, Facebook, Twitter et Instagram</h1>
+                <div className="rounded-full border w-10 h-10 text-black text-center flex justify-center items-center" style={{ backgroundColor: '#b6d023' }}>6</div>
+                <h1 className="ml-2 font-semibold text-zinc-800 text-2xl">Nous sommes joignables via les réseaux sociaux <br />Whatsapp, Facebook, Twitter et Instagram</h1>
               </div>
             </div>
             
@@ -243,7 +242,7 @@ function LandingPage() {
           </div>
 
           {/* Footer */}
-          <div className="relative top-[100px] bg-zinc-500 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
+          <div className="relative top-[700px] bg-zinc-500 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
             <img className="h-32 mx-auto" src={logo} alt="Logo" />
             <div className="text-white flex justify-center items-center">
               <h1>Nous sommes une entreprise de nettoyage <br />

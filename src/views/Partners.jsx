@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import rectangle from "../image/rectangle.png";
 import partners from "../image/Assets Mockup Cipa's site/partenaires CIPA 1.png";
-// import "./Partners.css";
 
 function Partners() {
   return (
