@@ -22,6 +22,11 @@ import medidecon from "../image/products/9.png";
 import papier from "../image/products/10.png";
 import sopalin from "../image/products/11.png";
 import lingettes from "../image/products/12.png";
+import des_cipa from "../image/Produits_photos/désinfectant.png";
+import dist_papier_cipa from "../image/Produits_photos/dist_papier.png";
+import dist_savon_cipa from "../image/Produits_photos/dist_savon.png";
+import lingettes_cipa from "../image/Produits_photos/lingettes_1.png";
+import essui_cipa from "../image/Produits_photos/essuitout.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
@@ -125,7 +130,7 @@ function Services() {
 
         {/* Les désinfectants de mains */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={sanitizer} alt="Logo" />
+          <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les désinfectants de mains</span>
           </p>
@@ -149,7 +154,7 @@ function Services() {
 
         {/* Les distributeurs de savons antimicrobiens */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={distsavon} alt="Logo" />
+          <img className="h-60 mx-auto" src={dist_savon_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les distributeurs de savons antimicrobiens</span>
           </p>
@@ -165,7 +170,7 @@ function Services() {
 
         {/* Les produits de désinfection et de décontamination */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={desinfections} alt="Logo" />
+          <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les produits de désinfection et de décontamination d’espace (Purif’Air)</span>
           </p>
@@ -205,7 +210,7 @@ function Services() {
 
         {/* Les papiers essuie-mains */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={sopalin} alt="Logo" />
+          <img className="h-60 mx-auto" src={essui_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les papiers essuie-mains</span>
           </p>
@@ -213,7 +218,7 @@ function Services() {
 
         {/* Les lingettes désinfectantes */}
         <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={lingettes} alt="Logo" />
+          <img className="h-60 mx-auto" src={lingettes_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les lingettes désinfectantes</span>
           </p>
@@ -224,7 +229,7 @@ function Services() {
 
       {/* Atouts */}
       <h1 className="text-4xl font-bold mb-10 mt-10 ml-10 text-black font-bold text-4xl transition-colors duration-300 hover:text-lime-500">Nos Atouts</h1>
-      <div className="absolute left-10 w-full rounded-2xl text-white p-10" style={{ width: '1400px', backgroundColor: '#b6d023' }}>
+      <div className="absolute left-10 w-full rounded-2xl text-black p-10 bg-lime-200" style={{ width: '1400px' }}>
         <ul className="space-y-2 font-bold text-xl">
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
@@ -305,37 +310,33 @@ function Services() {
 
       
       {/* Footer */}
-      <div className="relative top-[700px] bg-zinc-500 w-full h-96 grid grid-cols-3 gap-10 flex justify-center items-center">
-        <div className="text-white flex justify-center items-center">
-          <h1>Nous sommes une entreprise de nettoyage <br />
-            professionnelle dédiée à fournir des services <br />
-            de nettoyage de haute qualité. Avec une  <br />
-            équipe qualifiée, des pratiques  <br />
-            respectueuses de l'environnement et un <br />
-            engagement envers la satisfaction de nos <br />
-            clients, nous assurons des espaces  <br />
-            impeccables et hygiéniques. Votre partenaire <br />
-            de confiance pour un environnement plus  <br />
-            propre et plus sain.</h1>
+      <div className="relative top-[700px] text-black bg-lime-200 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
+        <img className="h-24 mx-auto" src={logo} alt="Logo" />
+        <div className="text-center md:text-left">
+          <h2 className="text-lg font-bold">À propos de nous</h2>
+          <p>
+            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
+            de haute qualité avec des pratiques respectueuses de l'environnement.
+          </p>
         </div>
-
-        <div className="relative absolute bottom-10">
-          <h1 className="text-white font-bold flex justify-center items-start">Navigation</h1>
-          <Link to="/home"><h1 className="text-white flex justify-center items-start">Accueil</h1></Link>
-          <Link to="/aboutus"><h1 className="text-white flex justify-center items-start">A Propos</h1></Link>
-          <Link to="/services"><h1 className="text-white flex justify-center items-start">Nos Services</h1></Link>
-          <Link to="/partners"><h1 className="text-white flex justify-center items-start">Nos Références</h1></Link>
-          <Link to="/contactus"><h1 className="text-white flex justify-center items-start">Contactez-nous</h1></Link>
+        <div className="text-center md:text-left">
+          <h2 className="text-lg font-bold">Navigation</h2>
+          <ul>
+            <li><Link to="/home">Accueil</Link></li>
+            <li><Link to="/aboutus">A Propos</Link></li>
+            <li><Link to="/services">Nos Services</Link></li>
+            <li><Link to="/partners">Nos Références</Link></li>
+            <li><Link to="/contactus">Contactez-nous</Link></li>
+          </ul>
         </div>
-
-        <div className="relative absolute bottom-12">
-          <h1 className="text-white font-bold flex justify-center items-start">Réseaux sociaux</h1>
-          <div className="flex justify-start items-center grid grid-cols-1">
-            <Link to="/home"><h1 className="text-white flex justify-center items-start">Facebook</h1></Link>
-            <Link to="/aboutus"><h1 className="text-white flex justify-center items-start">Whatsapp</h1></Link>
-            <Link to="/services"><h1 className="text-white flex justify-center items-start">LinkedIn</h1></Link>
-            <Link to="/partners"><h1 className="text-white flex justify-center items-start">Instagram</h1></Link>
-          </div>
+        <div className="text-center md:text-left">
+          <h2 className="text-lg font-bold">Réseaux sociaux</h2>
+          <ul>
+            <li><Link to="/home">Facebook</Link></li>
+            <li><Link to="/aboutus">WhatsApp</Link></li>
+            <li><Link to="/services">LinkedIn</Link></li>
+            <li><Link to="/partners">Instagram</Link></li>
+          </ul>
         </div>
       </div>
 
