@@ -24,38 +24,33 @@ function Partners() {
 
       
       {/* Footer */}
-      <div className="relative top-[100px] bg-zinc-500 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
-        <img className="h-32 mx-auto" src={logo} alt="Logo" />
-        <div className="text-white flex justify-center items-center">
-          <h1>Nous sommes une entreprise de nettoyage <br />
-            professionnelle dédiée à fournir des services <br />
-            de nettoyage de haute qualité. Avec une  <br />
-            équipe qualifiée, des pratiques  <br />
-            respectueuses de l'environnement et un <br />
-            engagement envers la satisfaction de nos <br />
-            clients, nous assurons des espaces  <br />
-            impeccables et hygiéniques. Votre partenaire <br />
-            de confiance pour un environnement plus  <br />
-            propre et plus sain.</h1>
+      <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
+      <img className="h-24 mx-auto" src={logo} alt="Logo" />
+        <div className="text-center md:text-left">
+          <h2 className="text-lg font-bold">À propos de nous</h2>
+          <p>
+            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
+            de haute qualité avec des pratiques respectueuses de l'environnement.
+          </p>
         </div>
-
-        <div className="relative absolute bottom-10">
-          <h1 className="text-white font-bold flex justify-center items-start">Navigation</h1>
-          <Link to="/home"><h1 className="text-white flex justify-center items-start">Accueil</h1></Link>
-          <Link to="/aboutus"><h1 className="text-white flex justify-center items-start">A Propos</h1></Link>
-          <Link to="/services"><h1 className="text-white flex justify-center items-start">Nos Services</h1></Link>
-          <Link to="/partners"><h1 className="text-white flex justify-center items-start">Nos Références</h1></Link>
-          <Link to="/contactus"><h1 className="text-white flex justify-center items-start">Contactez-nous</h1></Link>
+        <div className="text-center md:text-left">
+          <h2 className="text-lg font-bold">Navigation</h2>
+          <ul>
+            <li><Link to="/home">Accueil</Link></li>
+            <li><Link to="/aboutus">A Propos</Link></li>
+            <li><Link to="/services">Nos Services</Link></li>
+            <li><Link to="/partners">Nos Références</Link></li>
+            <li><Link to="/contactus">Contactez-nous</Link></li>
+          </ul>
         </div>
-
-        <div className="relative absolute bottom-12">
-          <h1 className="text-white font-bold flex justify-center items-start">Réseaux sociaux</h1>
-          <div className="flex justify-start items-center grid grid-cols-1">
-            <Link to="/home"><h1 className="text-white flex justify-center items-start">Facebook</h1></Link>
-            <Link to="/aboutus"><h1 className="text-white flex justify-center items-start">Whatsapp</h1></Link>
-            <Link to="/services"><h1 className="text-white flex justify-center items-start">LinkedIn</h1></Link>
-            <Link to="/partners"><h1 className="text-white flex justify-center items-start">Instagram</h1></Link>
-          </div>
+        <div className="text-center md:text-left">
+          <h2 className="text-lg font-bold">Réseaux sociaux</h2>
+          <ul>
+            <li><Link to="/home">Facebook</Link></li>
+            <li><Link to="/aboutus">WhatsApp</Link></li>
+            <li><Link to="/services">LinkedIn</Link></li>
+            <li><Link to="/partners">Instagram</Link></li>
+          </ul>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ function AboutUs() {
           {/* About Section */}
           <div className="md:w-1/2 space-y-6 p-4">
             <h1 className="text-2xl md:text-4xl font-bold mb-4">Qui sommes-nous?</h1>
-            <p className="text-base md:text-lg lg:text-2xl font-light leading-relaxed">
+            <p className="text-base md:text-lg lg:text-2xl leading-relaxed">
               CIPA JESSOUGNON SA est une société spécialisée dans les domaines de l'entretien et nettoyage,
               désinfection et dératisation des espaces publics et privés. Elle est dotée d'un personnel
               qualifié, avec des équipements de dernière génération et une solide expérience de près de
@@ -48,13 +48,13 @@ function AboutUs() {
           {/* Vision and Mission Text */}
           <div className="md:w-1/2 space-y-6">
             <h1 className="text-2xl md:text-4xl font-bold mb-4">Notre Vision</h1>
-            <p className="text-base md:text-lg lg:text-2xl font-light leading-relaxed">
+            <p className="text-base md:text-lg lg:text-2xl leading-relaxed">
               En tant que professionnel de l'hygiène, notre vision est d'être l'entreprise leader
               dans le domaine de l'hygiène collective et hospitalière au Bénin, en luttant contre
               les maladies infectieuses endémiques et pandémiques.
             </p>
             <h1 className="mt-8 text-2xl md:text-4xl font-bold">Notre Mission</h1>
-            <p className="mt-4 text-base md:text-lg lg:text-2xl font-light leading-relaxed">
+            <p className="mt-4 text-base md:text-lg lg:text-2xl leading-relaxed">
               Notre mission est d'assurer la propreté et le bien-être des espaces en fournissant
               des services de nettoyage de qualité, respectant les normes de sécurité et environnementales.
             </p>
@@ -80,10 +80,10 @@ function AboutUs() {
                 { icon: faMagnifyingGlass, title: "Transparence", description: "Communiquer clairement sur les services et tarifs." },
               ].map(({ icon, title, description }, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <FontAwesomeIcon icon={icon} className="text-3xl" />
+                  <FontAwesomeIcon icon={icon} className="text-4xl" />
                   <div>
-                    <span className="font-bold">{title}: </span>
-                    <p>{description}</p>
+                    <span className="font-bold text-2xl">{title}: </span>
+                    <p className="text-2xl">{description}</p>
                   </div>
                 </div>
               ))}
@@ -99,10 +99,10 @@ function AboutUs() {
                 { icon: faFaceSmile, title: "Satisfaction client", description: "Écouter les retours et améliorer continuellement." },
               ].map(({ icon, title, description }, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <FontAwesomeIcon icon={icon} className="text-3xl" />
+                  <FontAwesomeIcon icon={icon} className="text-4xl" />
                   <div>
-                    <span className="font-bold">{title}: </span>
-                    <p>{description}</p>
+                    <span className="font-bold text-2xl">{title}: </span>
+                    <p className="text-2xl">{description}</p>
                   </div>
                 </div>
               ))}
@@ -111,7 +111,7 @@ function AboutUs() {
         </div>
 
         {/* Footer */}
-        <div className="mt-24 bg-zinc-500 w-full p-6 md:p-20 text-white grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="mt-24 bg-lime-200 w-full p-6 md:p-20 text-black grid grid-cols-1 md:grid-cols-4 gap-10">
           <img className="h-24 mx-auto" src={logo} alt="Logo" />
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold">À propos de nous</h2>
