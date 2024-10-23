@@ -311,7 +311,7 @@ function Services() {
       
       {/* Footer */}
       <div className="relative top-[700px] text-black bg-lime-200 w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
-        <img className="h-24 mx-auto" src={logo} alt="Logo" />
+      <img className="h-24 mx-auto" src={logo} alt="Logo" />
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">À propos de nous</h2>
           <p>
@@ -332,10 +332,10 @@ function Services() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><Link to="/home">Facebook</Link></li>
-            <li><Link to="/aboutus">WhatsApp</Link></li>
-            <li><Link to="/services">LinkedIn</Link></li>
-            <li><Link to="/partners">Instagram</Link></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==">Instagram</a></li>
           </ul>
         </div>
       </div>

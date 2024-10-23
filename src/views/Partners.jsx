@@ -46,10 +46,10 @@ function Partners() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><Link to="/home">Facebook</Link></li>
-            <li><Link to="/aboutus">WhatsApp</Link></li>
-            <li><Link to="/services">LinkedIn</Link></li>
-            <li><Link to="/partners">Instagram</Link></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==">Instagram</a></li>
           </ul>
         </div>
       </div>

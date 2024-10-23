@@ -5,6 +5,7 @@ import Accueil from './views/Accueil';
 import Services from './views/Services';
 import Partners from './views/Partners';
 import ContactUs from './views/ContactUs';
+import News from './views/NewsPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Accueil />} />
+        <Route path="/news" element={<News />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />

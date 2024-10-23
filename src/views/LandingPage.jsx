@@ -314,7 +314,7 @@ function LandingPage() {
         </div>
       </div>
 
-      {/* "Ask for a devis" Section */}
+      {/* Contact Us Section */}
       <div className="relative top-[1400px] bg-zinc-900 w-full h-72 flex justify-center items-center">
         <button
           className="text-white w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition"
@@ -328,50 +328,31 @@ function LandingPage() {
 
       {/* Footer Section */}
       <div className="relative top-[1500px] bg-lime-200 w-full p-6 md:p-20 text-black grid grid-cols-1 md:grid-cols-4 gap-10">
-        <img className="h-24 mx-auto" src={logo} alt="Logo" />
+      <img className="h-24 mx-auto" src={logo} alt="Logo" />
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">À propos de nous</h2>
           <p>
-            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir
-            des services de haute qualité avec des pratiques respectueuses de
-            l'environnement.
+            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
+            de haute qualité avec des pratiques respectueuses de l'environnement.
           </p>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li>
-              <Link to="/home">Accueil</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">A Propos</Link>
-            </li>
-            <li>
-              <Link to="/services">Nos Services</Link>
-            </li>
-            <li>
-              <Link to="/partners">Nos Références</Link>
-            </li>
-            <li>
-              <Link to="/contactus">Contactez-nous</Link>
-            </li>
+            <li><Link to="/home">Accueil</Link></li>
+            <li><Link to="/aboutus">A Propos</Link></li>
+            <li><Link to="/services">Nos Services</Link></li>
+            <li><Link to="/partners">Nos Références</Link></li>
+            <li><Link to="/contactus">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li>
-              <Link to="/home">Facebook</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">WhatsApp</Link>
-            </li>
-            <li>
-              <Link to="/services">LinkedIn</Link>
-            </li>
-            <li>
-              <Link to="/partners">Instagram</Link>
-            </li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==">Instagram</a></li>
           </ul>
         </div>
       </div>

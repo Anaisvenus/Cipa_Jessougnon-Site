@@ -35,10 +35,17 @@ function NavBar() {
                         </button>
                     </Link>
 
-                    {/* Shopping Cart Button */}
+                    {/* Partners Button */}
                     <Link to="/partners">
                         <button className="rounded-full bg-transparent flex items-center justify-end hover:-translate-y-1 transition-transform duration-300">
                             Nos Références
+                        </button>
+                    </Link>
+
+                    {/* News Button */}
+                    <Link to="/news">
+                        <button className="rounded-full bg-transparent flex items-center justify-end hover:-translate-y-1 transition-transform duration-300">
+                            Actualités
                         </button>
                     </Link>
 
