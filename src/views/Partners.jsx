@@ -14,7 +14,7 @@ function Partners() {
       <div className="relative absolute top-10">
         {/* Image de fond */}
         <img 
-          className="w-full transform -translate-y-10 z-0" style={{ height: '900px', width: '1600px' }} 
+          className="w-full transform -translate-y-10 z-0 opacity-70" style={{ height: '900px', width: '1600px' }} 
           src={rectangle} 
           alt="Thumbs Up Woman" 
         />

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import actutitle from "../image/actu title.png";
+import fodboss from "../image/fod boss.webp";
 // import "./NewsPage.css";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -54,9 +55,13 @@ function NewsPage() {
                 </div>
                 
                 <div className="relative flex justify-center items-center gap-10">
-                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '300px' }}></div>
+                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover flex flex-col items-center" style={{ backgroundColor: '#000000', height: '500px', width: '400px' }}>
+                        <img className="rounded-xl mt-4 item-conseil transition-transform duration-300 ease-in-out hover:scale-110" src={fodboss} style={{ height: '200px', width: '350px' }} alt="Logo" />
+                        <h1 className="text-white mt-4 font-bold text-center italic uppercase p-2">Le FOD BOSS enfin disponible à l'aéroport de Cotonou</h1>
+                    </div>
+
                     
-                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '300px' }}>
+                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '400px' }}>
                         <div className="container mx-auto p-4">
                             <h1 className="text-3xl font-bold mb-4 text-white">Actualités du jour</h1>
                             {loading ? (
@@ -87,7 +92,7 @@ function NewsPage() {
                         </div>
                     </div>
 
-                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '300px' }}>
+                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '400px' }}>
                         <div className="container mx-auto p-4">
                             <h1 className="text-3xl font-bold mb-4 text-white">Actualités du jour</h1>
                             {loading ? (
@@ -159,7 +164,7 @@ function NewsPage() {
                     </div>
                 </div>
 
-
+                        
                 </div>
         </div>
     );

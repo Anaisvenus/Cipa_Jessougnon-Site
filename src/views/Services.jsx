@@ -45,7 +45,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={nettoyagebat} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Nettoyage de façades des bâtiments (vitrées, carrelées, allucobonds): </span>
+            <span className="italic font-bold">Nettoyage de façades des bâtiments (vitrées, carrelées, allucobonds): </span>
             Service de nettoyage des surfaces extérieures des bâtiments, y compris les fenêtres et les murs en carrelage ou en allucobonds, pour maintenir une apparence professionnelle.
           </p>
         </div>
@@ -54,7 +54,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={phytosanitaire} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Entretien phytosanitaire (dératisation, désinsectisation, vidange de fosse): </span>
+            <span className="italic font-bold">Entretien phytosanitaire (dératisation, désinsectisation, vidange de fosse): </span>
             Solutions de contrôle des nuisibles, y compris la dératisation et la désinsectisation, ainsi que le nettoyage des fosses septiques pour assurer un environnement sain.
           </p>
         </div>
@@ -63,7 +63,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={nettoyageindustrie} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Entretien et nettoyage industriel: </span>
+            <span className="italic font-bold">Entretien et nettoyage industriel: </span>
             Nettoyage approfondi des installations industrielles, des machines et des sols pour garantir un espace de travail propre et sûr.
           </p>
         </div>
@@ -72,7 +72,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={desinfection} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Décontamination et désinfection de locaux, espaces publics et hospitaliers: </span>
+            <span className="italic font-bold">Décontamination et désinfection de locaux, espaces publics et hospitaliers: </span>
             Service de désinfection et décontamination pour réduire la propagation des germes dans les hôpitaux et les espaces publics, assurant ainsi un environnement sûr.
           </p>
         </div>
@@ -81,7 +81,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={produits} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Ventes de matériels et produits de désinfection: </span>
+            <span className="italic font-bold">Ventes de matériels et produits de désinfection: </span>
             Fourniture de produits et matériels de désinfection de haute qualité pour aider à maintenir des normes d'hygiène.
           </p>
         </div>
@@ -90,7 +90,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={grassinstall} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Installation et entretien d'espaces verts: </span>
+            <span className="italic font-bold">Installation et entretien d'espaces verts: </span>
             Création et entretien d'espaces verts, y compris jardins et pelouses, pour un environnement agréable.
           </p>
         </div>
@@ -99,7 +99,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={grasscleaning} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Désherbage mécanique, chimique et bio: </span>
+            <span className="italic font-bold">Désherbage mécanique, chimique et bio: </span>
             Contrôle des mauvaises herbes par des méthodes mécaniques, chimiques ou écologiques pour garder les espaces extérieurs propres.
           </p>
         </div>
@@ -108,7 +108,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={hospital} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Formation pratique en hygiène domestique, communautaire et hospitalière: </span>
+            <span className="italic font-bold">Formation pratique en hygiène domestique, communautaire et hospitalière: </span>
             Formation pratique sur les bonnes pratiques d'hygiène pour les ménages, les communautés et les établissements de santé.
           </p>
         </div>
@@ -117,7 +117,7 @@ function Services() {
         <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={consultation} alt="Logo" />
           <p className="text-start mt-4">
-            <span className="font-bold">Consultation et expertise en hygiène: </span>
+            <span className="italic font-bold">Consultation et expertise en hygiène: </span>
             Conseils d'experts sur les pratiques d'hygiène, y compris des évaluations et des recommandations pour améliorer la propreté.
           </p>
         </div>
@@ -132,7 +132,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les désinfectants de mains</span>
+            <span className="italic font-bold">Les désinfectants de mains</span>
           </p>
         </div>
 
@@ -140,7 +140,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={distgel} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les distributeurs de désinfectants</span>
+            <span className="italic font-bold">Les distributeurs de désinfectants</span>
           </p>
         </div>
 
@@ -148,7 +148,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={savon} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les savons antimicrobiens</span>
+            <span className="italic font-bold">Les savons antimicrobiens</span>
           </p>
         </div>
 
@@ -156,7 +156,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={dist_savon_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les distributeurs de savons antimicrobiens</span>
+            <span className="italic font-bold">Les distributeurs de savons antimicrobiens</span>
           </p>
         </div>
 
@@ -164,7 +164,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={distsent} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les distributeurs automatiques de senteurs</span>
+            <span className="italic font-bold">Les distributeurs automatiques de senteurs</span>
           </p>
         </div>
 
@@ -172,7 +172,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les produits de désinfection et de décontamination d’espace (Purif’Air)</span>
+            <span className="italic font-bold">Les produits de désinfection et de décontamination d’espace (Purif’Air)</span>
           </p>
         </div>
 
@@ -180,7 +180,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={tunnel} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les tunnels de désinfection</span>
+            <span className="italic font-bold">Les tunnels de désinfection</span>
           </p>
         </div>
 
@@ -188,7 +188,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={decontamination} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les équipements de décontamination</span>
+            <span className="italic font-bold">Les équipements de décontamination</span>
           </p>
         </div>
 
@@ -196,7 +196,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={medidecon} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les désinfectants pour matériels médicaux (invasifs et non invasifs)</span>
+            <span className="italic font-bold">Les désinfectants pour matériels médicaux (invasifs et non invasifs)</span>
           </p>
         </div>
 
@@ -204,7 +204,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={papier} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les papiers hygiéniques</span>
+            <span className="italic font-bold">Les papiers hygiéniques</span>
           </p>
         </div>
 
@@ -212,7 +212,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={essui_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les papiers essuie-mains</span>
+            <span className="italic font-bold">Les papiers essuie-mains</span>
           </p>
         </div>
 
@@ -220,7 +220,7 @@ function Services() {
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={lingettes_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="font-bold">Les lingettes désinfectantes</span>
+            <span className="italic font-bold">Les lingettes désinfectantes</span>
           </p>
         </div>
 
