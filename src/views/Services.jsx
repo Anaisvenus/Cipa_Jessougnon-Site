@@ -2,12 +2,12 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import consultation from "../image/services&products/consultation.png";
-import desinfection from "../image/services&products/desinfection.png";
+import desinfection from "../image/decontamination.png";
 import grasscleaning from "../image/services&products/grass cleaning.png";
 import grassinstall from "../image/services&products/grass install.png";
-import hospital from "../image/services&products/hospital cleaning.png";
-import nettoyagebat from "../image/services&products/nettoyage bât.png";
-import nettoyageindustrie from "../image/services&products/nettoyage industrie.png";
+import hospital from "../image/hospital.png";
+import nettoyagebat from "../image/bat.png";
+import nettoyageindustrie from "../image/industry.png";
 import produits from "../image/services&products/produits.png";
 import phytosanitaire from "../image/services&products/phytosanitaire.png";
 import sanitizer from "../image/products/1.png";
@@ -42,7 +42,7 @@ function Services() {
       <div className="grid grid-cols-2 gap-10 mx-40">
 
         {/* Bâtiment */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={nettoyagebat} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Nettoyage de façades des bâtiments (vitrées, carrelées, allucobonds): </span>
@@ -51,7 +51,7 @@ function Services() {
         </div>
 
         {/* Phyto */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={phytosanitaire} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Entretien phytosanitaire (dératisation, désinsectisation, vidange de fosse): </span>
@@ -60,7 +60,7 @@ function Services() {
         </div>
 
         {/* Industrie */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={nettoyageindustrie} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Entretien et nettoyage industriel: </span>
@@ -69,7 +69,7 @@ function Services() {
         </div>
 
         {/* Désinfection */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={desinfection} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Décontamination et désinfection de locaux, espaces publics et hospitaliers: </span>
@@ -78,7 +78,7 @@ function Services() {
         </div>
 
         {/* Produits */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={produits} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Ventes de matériels et produits de désinfection: </span>
@@ -87,7 +87,7 @@ function Services() {
         </div>
 
         {/* Installation d'espaces verts */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={grassinstall} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Installation et entretien d'espaces verts: </span>
@@ -96,7 +96,7 @@ function Services() {
         </div>
 
         {/* Désherbage */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={grasscleaning} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Désherbage mécanique, chimique et bio: </span>
@@ -105,7 +105,7 @@ function Services() {
         </div>
 
         {/* Formation hospitalière */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={hospital} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Formation pratique en hygiène domestique, communautaire et hospitalière: </span>
@@ -114,7 +114,7 @@ function Services() {
         </div>
 
         {/* Consultation */}
-        <div className="flex flex-col items-start bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-start bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={consultation} alt="Logo" />
           <p className="text-start mt-4">
             <span className="font-bold">Consultation et expertise en hygiène: </span>
@@ -129,7 +129,7 @@ function Services() {
       <div className="grid grid-cols-2 gap-10 mx-40">
 
         {/* Les désinfectants de mains */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les désinfectants de mains</span>
@@ -137,7 +137,7 @@ function Services() {
         </div>
 
         {/* Les distributeurs de désinfectants */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={distgel} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les distributeurs de désinfectants</span>
@@ -145,7 +145,7 @@ function Services() {
         </div>
 
         {/* Les savons antimicrobiens */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={savon} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les savons antimicrobiens</span>
@@ -153,7 +153,7 @@ function Services() {
         </div>
 
         {/* Les distributeurs de savons antimicrobiens */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={dist_savon_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les distributeurs de savons antimicrobiens</span>
@@ -161,7 +161,7 @@ function Services() {
         </div>
 
         {/* Les distributeurs automatiques de senteurs */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={distsent} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les distributeurs automatiques de senteurs</span>
@@ -169,7 +169,7 @@ function Services() {
         </div>
 
         {/* Les produits de désinfection et de décontamination */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les produits de désinfection et de décontamination d’espace (Purif’Air)</span>
@@ -177,7 +177,7 @@ function Services() {
         </div>
 
         {/* Les tunnels de désinfection */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={tunnel} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les tunnels de désinfection</span>
@@ -185,7 +185,7 @@ function Services() {
         </div>
 
         {/* Les équipements de décontamination */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={decontamination} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les équipements de décontamination</span>
@@ -193,7 +193,7 @@ function Services() {
         </div>
 
         {/* Les désinfectants pour matériels médicaux */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={medidecon} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les désinfectants pour matériels médicaux (invasifs et non invasifs)</span>
@@ -201,7 +201,7 @@ function Services() {
         </div>
 
         {/* Les papiers hygiéniques */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={papier} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les papiers hygiéniques</span>
@@ -209,7 +209,7 @@ function Services() {
         </div>
 
         {/* Les papiers essuie-mains */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={essui_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les papiers essuie-mains</span>
@@ -217,7 +217,7 @@ function Services() {
         </div>
 
         {/* Les lingettes désinfectantes */}
-        <div className="flex flex-col items-center bg-lime-200 rounded-xl h-96 p-4">
+        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={lingettes_cipa} alt="Logo" />
           <p className="text-center mt-4">
             <span className="font-bold">Les lingettes désinfectantes</span>
@@ -229,7 +229,7 @@ function Services() {
 
       {/* Atouts */}
       <h1 className="text-4xl font-bold mb-10 mt-10 ml-10 text-black font-bold text-4xl transition-colors duration-300 hover:text-lime-500">Nos Atouts</h1>
-      <div className="absolute left-10 w-full rounded-2xl text-black p-10 bg-lime-200" style={{ width: '1400px' }}>
+      <div className="absolute left-10 w-full rounded-2xl text-black p-10 bg-blue-200" style={{ width: '1400px' }}>
         <ul className="space-y-2 font-bold text-xl">
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
@@ -322,20 +322,20 @@ function Services() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li><Link to="/home">Accueil</Link></li>
-            <li><Link to="/aboutus">A Propos</Link></li>
-            <li><Link to="/services">Nos Services</Link></li>
-            <li><Link to="/partners">Nos Références</Link></li>
-            <li><Link to="/contactus">Contactez-nous</Link></li>
+            <li><Link to="/home" className="hover:underline">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:underline">A Propos</Link></li>
+            <li><Link to="/services" className="hover:underline">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:underline">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:underline">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d">Facebook</a></li>
-            <li><a href="tel:+229 62 31 5172">WhatsApp</a></li>
-            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==">Instagram</a></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:underline">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:underline">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:underline">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:underline">Instagram</a></li>
           </ul>
         </div>
       </div>

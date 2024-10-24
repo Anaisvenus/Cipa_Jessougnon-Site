@@ -7,7 +7,7 @@ import thumbsUp from "../image/Assets Mockup Cipa's site/thumbsUpWoman.png";
 import rectangle from "../image/rectangle.png";
 import partners from "../image/Assets Mockup Cipa's site/partenaires CIPA 1.png";
 import maskman from "../image/Assets Mockup Cipa's site/Mask group.png";
-import whiteman from "../image/Assets Mockup Cipa's site/Flyer service de nettoyage promotion bleu (4).png";
+import blackwoman from "../image/Flyer service de nettoyage promotion bleu.png";
 import company from '../image/company.gif';
 import indstry from '../image/industry.gif';
 import desherbage from '../image/désherbage.gif';
@@ -20,8 +20,8 @@ function LandingPage() {
     <div className="LandingPage h-screen">
 
       <Navbar/>
+      {/* Logo and information */}
       <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-44 space-y-8 lg:space-y-0 p-4">
-        {/* Logo and information */}
         <div className="text-center lg:text-left">
           <div>
             <img className="h-14 mx-auto lg:mx-0" src={equipment} alt="equipment" />
@@ -42,13 +42,13 @@ function LandingPage() {
           </h3>
 
           <div>
-            <button
-              className="mt-6 lg:mt-10 w-full lg:w-60 text-white py-2 px-4 rounded-full hover:bg-lime-400 transition duration-300"
+            <a
+              className="mt-6 lg:mt-10 w-full lg:w-60 text-white hover:bg-blue-400 py-2 px-4 rounded-full transition duration-300"
               type="submit"
-              href="tel:+229 62 31 5172"
+               href="tel:+229 62 31 5172"
               style={{ backgroundColor: '#b6d023' }}>
               Contactez-nous
-            </button>
+            </a>
           </div>
           <br />
         </div>
@@ -67,7 +67,7 @@ function LandingPage() {
           src={thumbsUp}
           alt="Thumbs Up Woman"
         />
-        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-neutral-950 opacity-50" />
+        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-bleu-900 opacity-50" />
 
         {/* Logo Image */}
         <img
@@ -198,7 +198,7 @@ function LandingPage() {
           src={rectangle} 
           alt="Thumbs Up Woman" 
         />
-        <h1 className="absolute top-0 right-20 text-7xl font-bold z-10 p-10 text-white">Nos Références</h1>
+        <h1 className="absolute top-0 right-20 text-7xl font-bold z-10 p-10 text-black">Nos Références</h1>
         {/* Texte superposé à l'image */}
         <img className="absolute top-32 left-10 z-10" style={{ height: '700px', width: '1400px' }} src={partners} alt="Logo" />
       </div>
@@ -213,7 +213,7 @@ function LandingPage() {
           <div className="relative top-60">
             <img
               className="z-10 absolute left-72"
-              style={{ height: '500px', width: '400px' }}
+              style={{ height: '500px', width: '350px' }}
               src={maskman}
               alt="Logo"
             />
@@ -305,9 +305,9 @@ function LandingPage() {
             </div>
 
             <img
-              className="z-10 absolute right-72"
-              style={{ height: '500px', width: '400px' }}
-              src={whiteman}
+              className="z-10 absolute right-72 rounded-lg"
+              style={{ height: '500px', width: '350px' }}
+              src={blackwoman}
               alt="Logo"
             />
           </div>
@@ -315,7 +315,7 @@ function LandingPage() {
       </div>
 
       {/* Contact Us Section */}
-      <div className="relative top-[1400px] bg-zinc-900 w-full h-72 flex justify-center items-center">
+      <div className="relative top-[1400px] bg-blue-200 w-full h-72 flex justify-center items-center">
         <button
           className="text-white w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition"
           type="submit"
@@ -339,20 +339,20 @@ function LandingPage() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li><Link to="/home">Accueil</Link></li>
-            <li><Link to="/aboutus">A Propos</Link></li>
-            <li><Link to="/services">Nos Services</Link></li>
-            <li><Link to="/partners">Nos Références</Link></li>
-            <li><Link to="/contactus">Contactez-nous</Link></li>
+            <li><Link to="/home" className="hover:underline">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:underline">A Propos</Link></li>
+            <li><Link to="/services" className="hover:underline">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:underline">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:underline">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d">Facebook</a></li>
-            <li><a href="tel:+229 62 31 5172">WhatsApp</a></li>
-            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==">Instagram</a></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:underline">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:underline">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:underline">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:underline">Instagram</a></li>
           </ul>
         </div>
       </div>
