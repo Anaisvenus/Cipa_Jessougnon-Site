@@ -2,6 +2,18 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import "./ContactUs.css";
+import 'leaflet/dist/leaflet.css';
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+
+// Custom icon (optional)
+const customIcon = new L.Icon({
+  iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png',
+  iconSize: [38, 95], // size of the icon
+  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+});
 
 function ContactUs() {
 
@@ -10,21 +22,9 @@ function ContactUs() {
     <div classNameName="ContactUs h-screen">
       
       <Navbar/>
-      <div className="grid grid-cols-2 gap-0">
-        <div className="px-8 h-auto rounded-lg flex items-center">
-        <a
-          className="w-full text-gray-800 py-6 px-4 rounded-lg hover:bg-lime-400 transition duration-300 flex items-center justify-center"
-          type="submit"
-          href="tel:+22962315172"
-          style={{ backgroundColor: '#b6d023' }}>
-          Contactez-nous
-        </a>
-
-        </div>
-
+      <div className="">
         <div className="flex relative items-start justify-center w-full">
           <div className="w-full h-auto rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl">
-            
             {/* Company's Logo */}
             <div className="text-gray-500 group-hover:scale-105 transition-all">
               <img className="h-60 mx-auto" src={logo} alt="Logo" />
@@ -87,10 +87,40 @@ function ContactUs() {
                 </svg>
               </a>
             </div>
+          </div>
+
+          <div className="px-8 h-auto rounded-lg flex items-center">
+            <a
+              className="w-full text-gray-800 py-6 px-4 rounded-lg hover:bg-lime-400 transition duration-300 flex items-center justify-center"
+              type="submit"
+              href="tel:+22962315172"
+              style={{ backgroundColor: '#b6d023' }}>
+              Contactez-nous
+            </a>
 
           </div>
-        </div>
+          </div>
       </div>
+
+
+      <div className="flex justify-center items-center mt-4">
+      <MapContainer
+        center={[6.3703, 2.3912]} // Replace with your desired coordinates (latitude, longitude)
+        zoom={13}
+        scrollWheelZoom={false}
+        className="w-full h-screen rounded-xl shadow-lg"
+      >
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <Marker position={[6.3703, 2.3912]} icon={customIcon}>
+          <Popup>
+            Aéroport de Cotonou. <br /> This is a sample location.
+          </Popup>
+        </Marker>
+      </MapContainer>
+    </div>
 
       {/* Footer */}
       <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">

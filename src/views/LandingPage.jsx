@@ -24,12 +24,14 @@ function LandingPage() {
       <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-44 space-y-8 lg:space-y-0 p-4">
         <div className="text-center lg:text-left">
           <div>
-            <img className="h-14 mx-auto lg:mx-0" src={equipment} alt="equipment" />
+            {/* <img className="h-14 mx-auto lg:mx-0" src={equipment} alt="equipment" /> */}
+            <h1 className="text-xl" style={{ color: '#000000' }}>Équipements médicaux, réactifs, <br />
+            désinfection, dératisation, entretien, hygiène et bio-nettoyage</h1>
           </div>
           <br />
 
           <div>
-            <h1 className="text-5xl lg:text-7xl font-bold">CIPA <br /> JESSOUGNON SA</h1>
+            <h1 className="text-5xl lg:text-7xl font-bold" style={{ color: '#b6d023' }}>CIPA <br /> JESSOUGNON SA</h1>
           </div>
           <br />
 
@@ -43,7 +45,7 @@ function LandingPage() {
 
           <div>
             <a
-              className="mt-6 lg:mt-10 w-full lg:w-60 text-white hover:bg-blue-400 py-2 px-4 rounded-full transition duration-300"
+              className="relative absolute top-10 w-full lg:w-60 text-white hover:bg-blue-400 py-2 px-4 rounded-full transition duration-300"
               type="submit"
                href="tel:+229 62 31 5172"
               style={{ backgroundColor: '#b6d023' }}>
