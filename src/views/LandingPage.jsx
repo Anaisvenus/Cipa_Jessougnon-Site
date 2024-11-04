@@ -13,9 +13,16 @@ import indstry from '../image/industry.gif';
 import desherbage from '../image/désherbage.gif';
 import consultaion from '../image/consultation.gif';
 import products from '../image/products.gif';
+import React, { useEffect, useState } from 'react';
 import "./LandingPage.css";
+import { motion } from "framer-motion";
+import { useScroll } from './useScroll';
+
 
 function LandingPage() {
+  
+  const isScrolled = useScroll(200);
+
   return (
     <div className="LandingPage h-screen">
 
@@ -62,8 +69,7 @@ function LandingPage() {
       </div>
 
       {/* About us on the LandingPage */}
-      <div className="relative mt-12">
-        {/* Background Image */}
+      {/* <div className="relative mt-12">
         <img
           className="w-full h-64 md:h-96 lg:h-3/6 transform -translate-y-10 z-0 opacity-50 object-cover"
           src={thumbsUp}
@@ -71,7 +77,6 @@ function LandingPage() {
         />
         <div className="absolute inset-0 transform -translate-y-10 z-10 bg-bleu-900 opacity-50" />
 
-        {/* Logo Image */}
         <img
           className="absolute top-24 lg:bottom-24 left-20 md:left-20 lg:left-40 z-20"
           style={{ height: '600px', width: '400px' }}
@@ -79,12 +84,10 @@ function LandingPage() {
           alt="Logo"
         />
 
-        {/* Title */}
         <h1 className="absolute top-12 md:top-20 right-10 md:right-20 lg:right-80 text-4xl md:text-5xl lg:text-7xl font-bold z-10 p-4 md:p-6 text-white">
           A propos
         </h1>
 
-        {/* Description */}
         <h3 className="absolute top-32 md:top-48 right-4 md:right-10 lg:right-28 text-sm md:text-lg lg:text-xl z-10 p-4 md:p-6 text-start text-white">
           CIPA JESSOUGNON SA est une société spécialisée<br />
           dans les domaines de l'Entretien et Nettoyage,<br />
@@ -100,7 +103,47 @@ function LandingPage() {
           cas de doute, du vertical à l'horizontal, du propre vers  <br />
           le sale à reculons.<br />
         </h3>
-      </div>
+      </div> */}
+      <div className={`relative mt-12 transition-transform duration-500 ease-in-out ${isScrolled ? 'transform scale-105 opacity-90' : ''}`}>
+      {/* Background Image */}
+      <img
+        className="w-full h-64 md:h-96 lg:h-3/6 transform -translate-y-10 z-0 opacity-50 object-cover"
+        src={thumbsUp}
+        alt="Thumbs Up Woman"
+      />
+      <div className="absolute inset-0 transform -translate-y-10 z-10 bg-bleu-900 opacity-50" />
+
+      {/* Logo Image */}
+      <img
+        className="absolute top-24 lg:bottom-24 left-20 md:left-20 lg:left-40 z-20"
+        style={{ height: '600px', width: '400px' }}
+        src={logo}
+        alt="Logo"
+      />
+
+      {/* Title */}
+      <h1 className="absolute top-12 md:top-20 right-10 md:right-20 lg:right-80 text-4xl md:text-5xl lg:text-7xl font-bold z-10 p-4 md:p-6 text-white">
+        A propos
+      </h1>
+
+      {/* Description */}
+      <h3 className="absolute top-32 md:top-48 right-4 md:right-10 lg:right-28 text-sm md:text-lg lg:text-xl z-10 p-4 md:p-6 text-start text-white">
+        CIPA JESSOUGNON SA est une société spécialisée<br />
+        dans les domaines de l'Entretien et Nettoyage,<br />
+        désinfection et dératisation des espaces publics et<br />
+        privés. Elle est dotée d'un personnel qualifié, rompu<br />
+        à la tâche, avec des équipements de dernière génération.<br />
+        Elle a une solide expérience professionnelle de près de 20 ans<br />
+        et participe chaque année aux salons d'hygiène en Europe.<br />
+        L'ensemble de nos prestations respecte les principes de<br />
+        nettoyage dans les Etablissements de grandes affluences et<br />
+        de luxe. Nos prestations allient la protection à l'usage des<br />
+        techniques douces et procèdent à la réalisation de tests en <br />
+        cas de doute, du vertical à l'horizontal, du propre vers  <br />
+        le sale à reculons.<br />
+      </h3>
+    </div>
+
 
       {/* Services on the LandingPage */}
       <div className="relative flex flex-col justify-center items-center p-4">

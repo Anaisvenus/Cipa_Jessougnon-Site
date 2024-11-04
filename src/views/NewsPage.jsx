@@ -43,33 +43,25 @@ function NewsPage() {
             <Navbar/>
             {/* About us on the LandingPage */}
             <div className="relative">
-                <div className="absolute top-40 bg-lime-200 w-full transform -translate-y-10 z-0 object-cover" style={{ height: '500px' }}></div>
-                
-                {/* Background Image */}
-                {/* <img className="relative mt-20 w-full h-64 md:h-96 lg:h-3/6 transform -translate-y-10 z-0 object-cover"
-                    src={actutitle}
-                    alt="Actu Title"
-                /> */}
-                
                 {/* Title */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-10">
                     <div className="text-center hover:text-blue-400">
-                        <h1 className="text-7xl font-bold text-blue-400">
-                            CIPA JESSOUGNON <br />
-                            <span className="block font-semibold">Actualités</span>
-                        </h1>
+                        <h1 className="text-7xl block font-semibold text-blue-400"> Actualités </h1>
                     </div>
                 </div>
+                <div className="absolute top-56 bg-lime-200 w-full transform -translate-y-10 z-0 object-cover" style={{ height: '500px' }}></div>
+                
+                
                 
                 <div className="relative absolute top-72 flex justify-center items-center gap-10">
-                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover flex flex-col items-center" style={{ backgroundColor: '#000000', height: '500px', width: '400px' }}>
+                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover flex flex-col items-center bg-slate-600" style={{ height: '350px', width: '400px' }}>
                         <img className="rounded-xl mt-4 item-conseil transition-transform duration-300 ease-in-out hover:scale-110" src={fodboss} style={{ height: '200px', width: '350px' }} alt="Logo" />
                         <h1 className="text-white mt-4 font-bold text-center italic uppercase p-2" onClick={() => setCreateChamp(true)}>{headerText}</h1>
                     </div>
 
                     
-                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '400px' }}>
-                        <div className="container mx-auto p-4">
+                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover bg-slate-600" style={{ height: '350px', width: '400px' }}>
+                        <div className="container mx-auto p-4 ">
                             <h1 className="text-3xl font-bold mb-4 text-white">Actualités du jour</h1>
                             {loading ? (
                                 <p className="text-white">Chargement...</p>
@@ -99,7 +91,7 @@ function NewsPage() {
                         </div>
                     </div>
 
-                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover" style={{ backgroundColor: '#000000', height: '500px', width: '400px' }}>
+                    <div className="rounded-xl transform -translate-y-10 z-0 object-cover bg-slate-600" style={{ height: '350px', width: '400px' }}>
                         <div className="container mx-auto p-4">
                             <h1 className="text-3xl font-bold mb-4 text-white">Actualités du jour</h1>
                             {loading ? (
