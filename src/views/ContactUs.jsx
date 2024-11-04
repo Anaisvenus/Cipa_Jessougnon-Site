@@ -4,8 +4,9 @@ import logo from "../image/logo.png";
 import "./ContactUs.css";
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Popup } from 'react-leaflet';
 import L from 'leaflet';
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 // Custom icon (optional)
 const customIcon = new L.Icon({
@@ -15,15 +16,29 @@ const customIcon = new L.Icon({
   popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
 });
 
+const containerStyle = {
+  width: "100%",
+  height: "100vh", // Full page height for the map
+};
+
+const center = {
+  lat: 6.36258602142334,
+  lng: 2.4569947719573975,
+};
 function ContactUs() {
 
-  
+
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: "AIzaSyBCIJl-rRdiXRUconEQQ8z1FY9MrHJDojs", // Remplacez par votre clé API
+  });
+
+  if (!isLoaded) return <div>Loading...</div>;
   return (
     <div classNameName="ContactUs h-screen">
       
       <Navbar/>
       <div className="">
-        <div className="flex relative items-start justify-center w-full">
+        <div className="flex items-center justify-center w-full">
           <div className="w-full h-auto rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl">
             {/* Company's Logo */}
             <div className="text-gray-500 group-hover:scale-105 transition-all">
@@ -87,25 +102,29 @@ function ContactUs() {
                 </svg>
               </a>
             </div>
-          </div>
 
-          <div className="px-8 h-auto rounded-lg flex items-center">
+          <div className="px-8 h-auto mt-10 rounded-lg">
             <a
-              className="w-full text-gray-800 py-6 px-4 rounded-lg hover:bg-lime-400 transition duration-300 flex items-center justify-center"
+              className="w-full text-gray-800 py-4 px-4 rounded-lg hover:bg-lime-400 transition duration-300"
               type="submit"
               href="tel:+22962315172"
               style={{ backgroundColor: '#b6d023' }}>
               Contactez-nous
             </a>
-
           </div>
           </div>
+        </div>
       </div>
 
-
-      <div className="flex justify-center items-center mt-4">
+      {/* location */}
+      <div className="flex justify-center items-center h-screen bg-gray-100">
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
+          <Marker position={center} title="My location" />
+        </GoogleMap>
+      </div>
+      {/* <div className="flex justify-center items-center mt-4">
       <MapContainer
-        center={[6.3703, 2.3912]} // Replace with your desired coordinates (latitude, longitude)
+        center={[6.3703, 2.3912]}
         zoom={13}
         scrollWheelZoom={false}
         className="w-full h-screen rounded-xl shadow-lg"
@@ -120,7 +139,7 @@ function ContactUs() {
           </Popup>
         </Marker>
       </MapContainer>
-    </div>
+    </div> */}
 
       {/* Footer */}
       <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">

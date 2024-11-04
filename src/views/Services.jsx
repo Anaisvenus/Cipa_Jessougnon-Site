@@ -6,25 +6,26 @@ import desinfection from "../image/decontamination.png";
 import grasscleaning from "../image/services&products/grass cleaning.png";
 import grassinstall from "../image/services&products/grass install.png";
 import hospital from "../image/hospital.png";
-import nettoyagebat from "../image/bat.png";
+import nettoyagebat from "../image/nettoyage_palais.jpg";
 import nettoyageindustrie from "../image/industry.png";
-import produits from "../image/services&products/produits.png";
+import produits from "../image/products.png";
 import phytosanitaire from "../image/services&products/phytosanitaire.png";
 import sanitizer from "../image/products/1.png";
-import distgel from "../image/products/2.png";
-import savon from "../image/products/3.png";
+import distgel from "../image/4.png";
+import savon from "../image/1.png";
 import distsavon from "../image/products/4.png";
-import distsent from "../image/products/5.png";
+import distsent from "../image/6.png";
 import desinfections from "../image/products/6.png";
-import tunnel from "../image/products/7.png";
+import tunnel from "../image/trash.png";
 import decontamination from "../image/products/8.png";
 import medidecon from "../image/products/9.png";
 import papier from "../image/products/10.png";
 import sopalin from "../image/products/11.png";
 import lingettes from "../image/products/12.png";
-import des_cipa from "../image/Produits_photos/désinfectant.png";
-import dist_papier_cipa from "../image/Produits_photos/dist_papier.png";
-import dist_savon_cipa from "../image/Produits_photos/dist_savon.png";
+import desodorisant_cipa from "../image/Produits_photos/désinfectant.png";
+import des_cipa from "../image/2.png";
+import videoSrc from "../image/vitre_nettoyage.mp4";
+import dist_savon_cipa from "../image/3.png";
 import lingettes_cipa from "../image/Produits_photos/lingettes_1.png";
 import essui_cipa from "../image/Produits_photos/essuitout.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,6 +38,14 @@ function Services() {
     <div className="Services h-screen">
       
       <Navbar/>
+      {/* <video 
+          className="w-full rounded-lg" 
+          controls 
+          src={videoSrc} 
+          poster="URL_DE_L_IMAGE_DE_PREVIEW" 
+        >
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video> */}
       {/* Services */}
       <h1 className="ml-40 mb-10 text-4xl font-bold transition-colors duration-300 hover:text-lime-500">Nos Services</h1>
       <div className="grid grid-cols-2 gap-10 mx-40">
@@ -128,11 +137,11 @@ function Services() {
       <h1 className="ml-40 mb-10 mt-10 text-4xl font-bold transition-colors duration-300 hover:text-lime-500">Nos Produits</h1>
       <div className="grid grid-cols-2 gap-10 mx-40">
 
-        {/* Les désinfectants de mains */}
+        {/* Les désodorisants */}
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="italic font-bold">Les désinfectants de mains</span>
+            <span className="italic font-bold">Les désodorisants</span>
           </p>
         </div>
 
@@ -160,45 +169,45 @@ function Services() {
           </p>
         </div>
 
-        {/* Les distributeurs automatiques de senteurs */}
+        {/* Les distributeurs d'essui-tout */}
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={distsent} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="italic font-bold">Les distributeurs automatiques de senteurs</span>
+            <span className="italic font-bold">Les distributeurs d'essuie main</span>
           </p>
         </div>
 
         {/* Les produits de désinfection et de décontamination */}
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
-          <img className="h-60 mx-auto" src={des_cipa} alt="Logo" />
+          <img className="h-60 mx-auto" src={desodorisant_cipa} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="italic font-bold">Les produits de désinfection et de décontamination d’espace (Purif’Air)</span>
+            <span className="italic font-bold">Les produits de désinfection et de décontamination d'espace (Purif'Air)</span>
           </p>
         </div>
 
-        {/* Les tunnels de désinfection */}
+        {/* Les poubelles */}
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={tunnel} alt="Logo" />
           <p className="text-center mt-4">
-            <span className="italic font-bold">Les tunnels de désinfection</span>
+            <span className="italic font-bold">Les poubelles</span>
           </p>
         </div>
 
         {/* Les équipements de décontamination */}
-        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
+        {/* <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={decontamination} alt="Logo" />
           <p className="text-center mt-4">
             <span className="italic font-bold">Les équipements de décontamination</span>
           </p>
-        </div>
+        </div> */}
 
         {/* Les désinfectants pour matériels médicaux */}
-        <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
+        {/* <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
           <img className="h-60 mx-auto" src={medidecon} alt="Logo" />
           <p className="text-center mt-4">
             <span className="italic font-bold">Les désinfectants pour matériels médicaux (invasifs et non invasifs)</span>
           </p>
-        </div>
+        </div> */}
 
         {/* Les papiers hygiéniques */}
         <div className="flex flex-col items-center bg-blue-200 rounded-xl h-96 p-4">
