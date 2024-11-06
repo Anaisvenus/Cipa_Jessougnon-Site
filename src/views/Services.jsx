@@ -235,77 +235,77 @@ function Services() {
         <ul className="space-y-2 font-bold text-xl">
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous disposons d'un centre de formation en Hygiène et en Assistance Domestique</p>
+            <p className="hover:text-lime-500">Nous disposons d'un centre de formation en Hygiène et en Assistance Domestique</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous garantissons une disponibilité continue 24H sur 24H</p>
+            <p className="hover:text-lime-500">Nous garantissons une disponibilité continue 24H sur 24H</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous avons des techniciens professionnels, habilités et formés</p>
+            <p className="hover:text-lime-500">Nous avons des techniciens professionnels, habilités et formés</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous formons nos équipes à l'utilisation de nos produits et matériels d'hygiène</p>
+            <p className="hover:text-lime-500">Nous formons nos équipes à l'utilisation de nos produits et matériels d'hygiène</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous mettons un accent particulier sur l'hygiène corporelle et vestimentaire de l'ensemble de notre personnel.</p>
+            <p className="hover:text-lime-500">Nous mettons un accent particulier sur l'hygiène corporelle et vestimentaire de l'ensemble de notre personnel.</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous veillons à ce que l'ensemble de notre personnel se conforme aux mesures sanitaires en vigueur en république du Bénin</p>
+            <p className="hover:text-lime-500">Nous veillons à ce que l'ensemble de notre personnel se conforme aux mesures sanitaires en vigueur en république du Bénin</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous mettons en place des moyens techniques précis et conforme aux besoins du client</p>
+            <p className="hover:text-lime-500">Nous mettons en place des moyens techniques précis et conforme aux besoins du client</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous conseillons et accompagnons plusieurs structures dans l'élaboration et la mise en œuvre de leur politique d'hygiène</p>
+            <p className="hover:text-lime-500">Nous conseillons et accompagnons plusieurs structures dans l'élaboration et la mise en œuvre de leur politique d'hygiène</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous élaborons pour chacune de nos interventions les protocoles d'hygiène adéquats</p>
+            <p className="hover:text-lime-500">Nous élaborons pour chacune de nos interventions les protocoles d'hygiène adéquats</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous évaluons de façon rigoureuse et méticuleuse les besoins qualitatifs et quantitatifs de nos services</p>
+            <p className="hover:text-lime-500">Nous évaluons de façon rigoureuse et méticuleuse les besoins qualitatifs et quantitatifs de nos services</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous suivons, vérifions et ajustons nos plans d'hygiène</p>
+            <p className="hover:text-lime-500">Nous suivons, vérifions et ajustons nos plans d'hygiène</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous disposons d'une documentation scientifique et technique pour toutes nos interventions</p>
+            <p className="hover:text-lime-500">Nous disposons d'une documentation scientifique et technique pour toutes nos interventions</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous réalisons des audits et des contrôles réguliers sur les divers sites où nous intervenons</p>
+            <p className="hover:text-lime-500">Nous réalisons des audits et des contrôles réguliers sur les divers sites où nous intervenons</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous disposons d'une ligne d'appel Service Clientèle et Contentieux ouverte en permanence</p>
+            <p className="hover:text-lime-500">Nous disposons d'une ligne d'appel Service Clientèle et Contentieux ouverte en permanence</p>
           </li>
 
           <li className="flex items-start space-x-4">
             <FontAwesomeIcon icon={faStar} />
-            <p className="hover:underline">Nous sommes joignables via les réseaux sociaux Whatsapp, Facebook, Twitter et Instagram</p>
+            <p className="hover:text-lime-500">Nous sommes joignables via les réseaux sociaux Whatsapp, Facebook, Twitter et Instagram</p>
           </li>
         </ul>
       </div>
@@ -324,20 +324,20 @@ function Services() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li><Link to="/home" className="hover:underline">Accueil</Link></li>
-            <li><Link to="/aboutus" className="hover:underline">A Propos</Link></li>
-            <li><Link to="/services" className="hover:underline">Nos Services</Link></li>
-            <li><Link to="/partners" className="hover:underline">Nos Références</Link></li>
-            <li><Link to="/contactus" className="hover:underline">Contactez-nous</Link></li>
+            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
+            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:underline">Facebook</a></li>
-            <li><a href="tel:+229 62 31 5172" className="hover:underline">WhatsApp</a></li>
-            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:underline">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:underline">Instagram</a></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
           </ul>
         </div>
       </div>

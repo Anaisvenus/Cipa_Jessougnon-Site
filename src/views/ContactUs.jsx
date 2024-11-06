@@ -4,35 +4,11 @@ import logo from "../image/logo.png";
 import "./ContactUs.css";
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
-import { MapContainer, TileLayer, Popup } from 'react-leaflet';
-import L from 'leaflet';
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { MapContainer, TileLayer } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
-// Custom icon (optional)
-const customIcon = new L.Icon({
-  iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png',
-  iconSize: [38, 95], // size of the icon
-  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
-  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
-});
-
-const containerStyle = {
-  width: "100%",
-  height: "100vh", // Full page height for the map
-};
-
-const center = {
-  lat: 6.36258602142334,
-  lng: 2.4569947719573975,
-};
 function ContactUs() {
 
-
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBCIJl-rRdiXRUconEQQ8z1FY9MrHJDojs", // Remplacez par votre clé API
-  });
-
-  if (!isLoaded) return <div>Loading...</div>;
   return (
     <div classNameName="ContactUs h-screen">
       
@@ -116,30 +92,39 @@ function ContactUs() {
         </div>
       </div>
 
-      {/* location */}
-      {/* <div className="flex justify-center items-center h-screen bg-gray-100">
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
-          <Marker position={center} title="My location" />
-        </GoogleMap>
+      {/* Map Section */}
+      <div className="ContactUs h-screen">
+        <div className="flex justify-center items-center mt-4">
+          <MapContainer
+            center={[6.3627, 2.4310]}  // Centré sur l'adresse 9F74+4QM, Rue 1682B, Cotonou, Bénin
+            zoom={13}
+            scrollWheelZoom={false}
+            className="w-full h-screen rounded-xl shadow-lg"
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+          </MapContainer>
+        </div>
+      </div>
+      {/* <div className="ContactUs h-screen">
+        <div className="flex justify-center items-center mt-4">
+          <MapContainer
+            center={[6.3627, 2.4310]}
+            zoom={13}
+            scrollWheelZoom={false}
+            className="w-full h-screen rounded-xl shadow-lg"
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+          </MapContainer>
+        </div>
       </div> */}
-      {/* <div className="flex justify-center items-center mt-4">
-      <MapContainer
-        center={[6.3703, 2.3912]}
-        zoom={13}
-        scrollWheelZoom={false}
-        className="w-full h-screen rounded-xl shadow-lg"
-      >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        <Marker position={[6.3703, 2.3912]} icon={customIcon}>
-          <Popup>
-            Aéroport de Cotonou. <br /> This is a sample location.
-          </Popup>
-        </Marker>
-      </MapContainer>
-    </div> */}
+
+
 
       {/* Footer */}
       <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
@@ -154,20 +139,20 @@ function ContactUs() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li><Link to="/home" className="hover:underline">Accueil</Link></li>
-            <li><Link to="/aboutus" className="hover:underline">A Propos</Link></li>
-            <li><Link to="/services" className="hover:underline">Nos Services</Link></li>
-            <li><Link to="/partners" className="hover:underline">Nos Références</Link></li>
-            <li><Link to="/contactus" className="hover:underline">Contactez-nous</Link></li>
+            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
+            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:underline">Facebook</a></li>
-            <li><a href="tel:+229 62 31 5172" className="hover:underline">WhatsApp</a></li>
-            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:underline">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:underline">Instagram</a></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
           </ul>
         </div>
       </div>
