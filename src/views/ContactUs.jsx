@@ -2,27 +2,20 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import "./ContactUs.css";
+import 'leaflet/dist/leaflet.css';
+import React from 'react';
+import { MapContainer, TileLayer } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
 function ContactUs() {
 
-  
   return (
     <div classNameName="ContactUs h-screen">
       
       <Navbar/>
-      <div className="grid grid-cols-2 gap-0">
-        <div className="px-8 h-auto rounded-lg flex items-center">
-          <button
-            className="w-full text-gray-800 py-6 px-4 rounded-lg hover:bg-lime-400 transition duration-300"
-            type="submit"  href="tel:+229 62 31 5172"
-            style={{ backgroundColor: '#b6d023' }}>
-            Contactez-nous
-          </button>
-        </div>
-
-        <div className="flex relative items-start justify-center w-full">
+      <div className="">
+        <div className="flex items-center justify-center w-full">
           <div className="w-full h-auto rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl">
-            
             {/* Company's Logo */}
             <div className="text-gray-500 group-hover:scale-105 transition-all">
               <img className="h-60 mx-auto" src={logo} alt="Logo" />
@@ -86,9 +79,52 @@ function ContactUs() {
               </a>
             </div>
 
+          <div className="px-8 h-auto mt-10 rounded-lg">
+            <a
+              className="w-full text-gray-800 py-4 px-4 rounded-lg hover:bg-lime-400  hover:scale-105 transition-all duration-500"
+              type="submit"
+              href="tel:+22962315172"
+              style={{ backgroundColor: '#b6d023' }}>
+              Contactez-nous
+            </a>
+          </div>
           </div>
         </div>
       </div>
+
+      {/* Map Section */}
+      <div className="ContactUs h-screen">
+        <div className="flex justify-center items-center mt-4">
+          <MapContainer
+            center={[6.3627, 2.4310]}  // Centré sur l'adresse 9F74+4QM, Rue 1682B, Cotonou, Bénin
+            zoom={13}
+            scrollWheelZoom={false}
+            className="w-full h-screen rounded-xl shadow-lg"
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+          </MapContainer>
+        </div>
+      </div>
+      {/* <div className="ContactUs h-screen">
+        <div className="flex justify-center items-center mt-4">
+          <MapContainer
+            center={[6.3627, 2.4310]}
+            zoom={13}
+            scrollWheelZoom={false}
+            className="w-full h-screen rounded-xl shadow-lg"
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+          </MapContainer>
+        </div>
+      </div> */}
+
+
 
       {/* Footer */}
       <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
@@ -103,20 +139,20 @@ function ContactUs() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li><Link to="/home">Accueil</Link></li>
-            <li><Link to="/aboutus">A Propos</Link></li>
-            <li><Link to="/services">Nos Services</Link></li>
-            <li><Link to="/partners">Nos Références</Link></li>
-            <li><Link to="/contactus">Contactez-nous</Link></li>
+            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
+            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><Link to="/home">Facebook</Link></li>
-            <li><Link to="/aboutus">WhatsApp</Link></li>
-            <li><Link to="/services">LinkedIn</Link></li>
-            <li><Link to="/partners">Instagram</Link></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
           </ul>
         </div>
       </div>

@@ -69,7 +69,7 @@ function AboutUs() {
         {/* Values Section */}
         <div className="w-full px-6 md:px-20 mt-24">
           <h1 className="text-2xl md:text-4xl font-bold mb-10 text-center">Nos Valeurs</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 text-lg p-6 md:p-10 border-2 border-lime-400">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 text-lg p-6 md:p-10 border-4 rounded-lg border-lime-400">
             {/* First Column */}
             <div className="space-y-6">
               {[
@@ -123,20 +123,20 @@ function AboutUs() {
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold">Navigation</h2>
             <ul>
-              <li><Link to="/home">Accueil</Link></li>
-              <li><Link to="/aboutus">A Propos</Link></li>
-              <li><Link to="/services">Nos Services</Link></li>
-              <li><Link to="/partners">Nos Références</Link></li>
-              <li><Link to="/contactus">Contactez-nous</Link></li>
-            </ul>
+                    <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
+                    <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
+                    <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
+                    <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
+                    <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
+                </ul>
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold">Réseaux sociaux</h2>
             <ul>
-              <li><Link to="/home">Facebook</Link></li>
-              <li><Link to="/aboutus">WhatsApp</Link></li>
-              <li><Link to="/services">LinkedIn</Link></li>
-              <li><Link to="/partners">Instagram</Link></li>
+              <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
+              <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
+              <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
             </ul>
           </div>
         </div>

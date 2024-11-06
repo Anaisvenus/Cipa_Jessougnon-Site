@@ -14,7 +14,7 @@ function Partners() {
       <div className="relative absolute top-10">
         {/* Image de fond */}
         <img 
-          className="w-full transform -translate-y-10 z-0" style={{ height: '900px', width: '1600px' }} 
+          className="w-full transform -translate-y-10 z-0 opacity-70" style={{ height: '900px', width: '1600px' }} 
           src={rectangle} 
           alt="Thumbs Up Woman" 
         />
@@ -36,20 +36,20 @@ function Partners() {
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li><Link to="/home">Accueil</Link></li>
-            <li><Link to="/aboutus">A Propos</Link></li>
-            <li><Link to="/services">Nos Services</Link></li>
-            <li><Link to="/partners">Nos Références</Link></li>
-            <li><Link to="/contactus">Contactez-nous</Link></li>
+            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
+            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li><Link to="/home">Facebook</Link></li>
-            <li><Link to="/aboutus">WhatsApp</Link></li>
-            <li><Link to="/services">LinkedIn</Link></li>
-            <li><Link to="/partners">Instagram</Link></li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
           </ul>
         </div>
       </div>

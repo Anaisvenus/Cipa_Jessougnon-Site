@@ -7,29 +7,39 @@ import thumbsUp from "../image/Assets Mockup Cipa's site/thumbsUpWoman.png";
 import rectangle from "../image/rectangle.png";
 import partners from "../image/Assets Mockup Cipa's site/partenaires CIPA 1.png";
 import maskman from "../image/Assets Mockup Cipa's site/Mask group.png";
-import whiteman from "../image/Assets Mockup Cipa's site/Flyer service de nettoyage promotion bleu (4).png";
+import blackwoman from "../image/Flyer service de nettoyage promotion bleu.png";
 import company from '../image/company.gif';
 import indstry from '../image/industry.gif';
 import desherbage from '../image/désherbage.gif';
 import consultaion from '../image/consultation.gif';
 import products from '../image/products.gif';
+import React, { useEffect, useState } from 'react';
 import "./LandingPage.css";
+import { motion } from "framer-motion";
+import { useScroll } from './useScroll';
+
 
 function LandingPage() {
+  
+  const isScrolled = useScroll(200);
+  
+
   return (
     <div className="LandingPage h-screen">
 
       <Navbar/>
+      {/* Logo and information */}
       <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-44 space-y-8 lg:space-y-0 p-4">
-        {/* Logo and information */}
         <div className="text-center lg:text-left">
           <div>
-            <img className="h-14 mx-auto lg:mx-0" src={equipment} alt="equipment" />
+            {/* <img className="h-14 mx-auto lg:mx-0" src={equipment} alt="equipment" /> */}
+            <h1 className="text-xl" style={{ color: '#000000' }}>Équipements médicaux, réactifs, <br />
+            désinfection, dératisation, entretien, hygiène et bio-nettoyage</h1>
           </div>
           <br />
 
           <div>
-            <h1 className="text-5xl lg:text-7xl font-bold">CIPA <br /> JESSOUGNON SA</h1>
+            <h1 className="text-5xl lg:text-7xl font-bold" style={{ color: '#b6d023' }}>CIPA <br /> JESSOUGNON SA</h1>
           </div>
           <br />
 
@@ -42,13 +52,13 @@ function LandingPage() {
           </h3>
 
           <div>
-            <button
-              className="mt-6 lg:mt-10 w-full lg:w-60 text-white py-2 px-4 rounded-full hover:bg-lime-400 transition duration-300"
+            <a
+              className="relative absolute top-10 w-full lg:w-60 text-white hover:bg-blue-400 py-2 px-4 rounded-full transition duration-300"
               type="submit"
-              href="tel:+229 62 31 5172"
+               href="tel:+229 62 31 5172"
               style={{ backgroundColor: '#b6d023' }}>
               Contactez-nous
-            </button>
+            </a>
           </div>
           <br />
         </div>
@@ -57,17 +67,17 @@ function LandingPage() {
         <div className="w-full lg:w-auto">
           <img className="h-64 md:h-80 lg:h-4/6 mx-auto" src={aspirateur} alt="Logo" />
         </div>
-      </div>
+        </div>
 
-      {/* About us on the LandingPage */}
-      <div className="relative mt-12">
+        {/* About us on the LandingPage */}
+        <div className={`relative mt-12 transition-transform duration-500 ease-in-out ${isScrolled ? 'transform scale-105 opacity-90' : ''}`}>
         {/* Background Image */}
         <img
           className="w-full h-64 md:h-96 lg:h-3/6 transform -translate-y-10 z-0 opacity-50 object-cover"
           src={thumbsUp}
           alt="Thumbs Up Woman"
         />
-        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-neutral-950 opacity-50" />
+        <div className="absolute inset-0 transform -translate-y-10 z-10 bg-bleu-900 opacity-50" />
 
         {/* Logo Image */}
         <img
@@ -99,6 +109,7 @@ function LandingPage() {
           le sale à reculons.<br />
         </h3>
       </div>
+
 
       {/* Services on the LandingPage */}
       <div className="relative flex flex-col justify-center items-center p-4">
@@ -194,11 +205,11 @@ function LandingPage() {
       <div className="relative absolute top-32">
         {/* Image de fond */}
         <img 
-          className="w-full transform -translate-y-10 z-0" style={{ height: '900px', width: '1600px' }} 
+          className="w-full transform -translate-y-10 z-0 opacity-70" style={{ height: '900px', width: '1600px' }} 
           src={rectangle} 
           alt="Thumbs Up Woman" 
         />
-        <h1 className="absolute top-0 right-20 text-7xl font-bold z-10 p-10 text-white">Nos Références</h1>
+        <h1 className="absolute top-0 right-20 text-7xl font-bold z-10 p-10 text-black">Nos Références</h1>
         {/* Texte superposé à l'image */}
         <img className="absolute top-32 left-10 z-10" style={{ height: '700px', width: '1400px' }} src={partners} alt="Logo" />
       </div>
@@ -213,7 +224,7 @@ function LandingPage() {
           <div className="relative top-60">
             <img
               className="z-10 absolute left-72"
-              style={{ height: '500px', width: '400px' }}
+              style={{ height: '500px', width: '350px' }}
               src={maskman}
               alt="Logo"
             />
@@ -305,17 +316,17 @@ function LandingPage() {
             </div>
 
             <img
-              className="z-10 absolute right-72"
-              style={{ height: '500px', width: '400px' }}
-              src={whiteman}
+              className="z-10 absolute right-72 rounded-lg"
+              style={{ height: '500px', width: '350px' }}
+              src={blackwoman}
               alt="Logo"
             />
           </div>
         </div>
       </div>
 
-      {/* "Ask for a devis" Section */}
-      <div className="relative top-[1400px] bg-zinc-900 w-full h-72 flex justify-center items-center">
+      {/* Contact Us Section */}
+      <div className="relative top-[1400px] bg-blue-200 w-full h-72 flex justify-center items-center">
         <button
           className="text-white w-5/6 h-36 rounded-full text-4xl font-bold hover:bg-lime-600 transition"
           type="submit"
@@ -328,50 +339,31 @@ function LandingPage() {
 
       {/* Footer Section */}
       <div className="relative top-[1500px] bg-lime-200 w-full p-6 md:p-20 text-black grid grid-cols-1 md:grid-cols-4 gap-10">
-        <img className="h-24 mx-auto" src={logo} alt="Logo" />
+      <img className="h-24 mx-auto" src={logo} alt="Logo" />
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">À propos de nous</h2>
           <p>
-            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir
-            des services de haute qualité avec des pratiques respectueuses de
-            l'environnement.
+            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
+            de haute qualité avec des pratiques respectueuses de l'environnement.
           </p>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Navigation</h2>
           <ul>
-            <li>
-              <Link to="/home">Accueil</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">A Propos</Link>
-            </li>
-            <li>
-              <Link to="/services">Nos Services</Link>
-            </li>
-            <li>
-              <Link to="/partners">Nos Références</Link>
-            </li>
-            <li>
-              <Link to="/contactus">Contactez-nous</Link>
-            </li>
+            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
+            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
+            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
+            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
+            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
           </ul>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-lg font-bold">Réseaux sociaux</h2>
           <ul>
-            <li>
-              <Link to="/home">Facebook</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">WhatsApp</Link>
-            </li>
-            <li>
-              <Link to="/services">LinkedIn</Link>
-            </li>
-            <li>
-              <Link to="/partners">Instagram</Link>
-            </li>
+            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
+            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
           </ul>
         </div>
       </div>
