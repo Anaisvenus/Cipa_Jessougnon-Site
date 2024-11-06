@@ -105,7 +105,7 @@ function ContactUs() {
 
           <div className="px-8 h-auto mt-10 rounded-lg">
             <a
-              className="w-full text-gray-800 py-4 px-4 rounded-lg hover:bg-lime-400 transition duration-300"
+              className="w-full text-gray-800 py-4 px-4 rounded-lg hover:bg-lime-400  hover:scale-105 transition-all duration-500"
               type="submit"
               href="tel:+22962315172"
               style={{ backgroundColor: '#b6d023' }}>
@@ -117,11 +117,11 @@ function ContactUs() {
       </div>
 
       {/* location */}
-      <div className="flex justify-center items-center h-screen bg-gray-100">
+      {/* <div className="flex justify-center items-center h-screen bg-gray-100">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
           <Marker position={center} title="My location" />
         </GoogleMap>
-      </div>
+      </div> */}
       {/* <div className="flex justify-center items-center mt-4">
       <MapContainer
         center={[6.3703, 2.3912]}
