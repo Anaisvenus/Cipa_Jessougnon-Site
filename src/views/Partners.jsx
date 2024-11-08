@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import logo from "../image/logo.png";
 import rectangle from "../image/rectangle.png";
@@ -9,50 +10,23 @@ function Partners() {
     <div className="Partners h-screen">
       
       <Navbar/>
-      <h1 className="ml-10 mb-10 text-4xl font-bold transition-colors duration-300 hover:text-lime-500">Nos Références</h1>
-      {/* Partners on the LandingPage */}
-      <div className="relative absolute top-10">
-        {/* Image de fond */}
-        <img 
-          className="w-full transform -translate-y-10 z-0 opacity-70" style={{ height: '900px', width: '1600px' }} 
-          src={rectangle} 
-          alt="Thumbs Up Woman" 
-        />
-        {/* Texte superposé à l'image */}
-        <img className="absolute top-14 left-10 z-10" style={{ height: '700px', width: '1400px' }} src={partners} alt="Logo" />
-      </div>
+      <main className="flex flex-wrap">
+        <div className="relative absolute top-10 flex  justify-center items-center">
+          {/* Image de fond */}
+          <img 
+            className="md:w-full transform -translate-y-10 z-0 opacity-70" style={{ height: '700px', width: '1200px' }} 
+            src={rectangle} 
+            alt="Thumbs Up Woman" 
+          />
+          <h1 className="absolute top-0 text-xl font-bold z-10 p-10 text-black">Nos Références</h1>
+          {/* Texte superposé à l'image */}
+          <img className="absolute top-20 z-10" style={{ height: '500px', width: '1000px' }} src={partners} alt="Logo" />
+        </div>
+      </main>
 
-      
+
       {/* Footer */}
-      <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
-      <img className="h-24 mx-auto" src={logo} alt="Logo" />
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">À propos de nous</h2>
-          <p>
-            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
-            de haute qualité avec des pratiques respectueuses de l'environnement.
-          </p>
-        </div>
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">Navigation</h2>
-          <ul>
-            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
-            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
-            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
-            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
-            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
-          </ul>
-        </div>
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">Réseaux sociaux</h2>
-          <ul>
-            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
-            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
-            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import logo from "../image/logo.png";
 import actutitle from "../image/actu title.png";
 import fodboss from "../image/fod boss.webp";
@@ -172,36 +173,10 @@ function NewsPage() {
                         {/* Your main content goes here */}
                     </div>
 
-                    {/* Footer */}
-                    <div className="bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
-                        <img className="h-24 mx-auto" src={logo} alt="Logo" />
-                        <div className="text-center md:text-left">
-                        <h2 className="text-lg font-bold">À propos de nous</h2>
-                        <p>
-                            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
-                            de haute qualité avec des pratiques respectueuses de l'environnement.
-                        </p>
-                        </div>
-                        <div className="text-center md:text-left">
-                        <h2 className="text-lg font-bold">Navigation</h2>
-                        <ul>
-                            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
-                            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
-                            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
-                            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
-                            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
-                        </ul>
-                        </div>
-                        <div className="text-center md:text-left">
-                        <h2 className="text-lg font-bold">Réseaux sociaux</h2>
-                        <ul>
-                            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
-                            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
-                            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
-                            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
-                        </ul>
-                        </div>
-                    </div>
+                    
+
+      {/* Footer */}
+      <Footer/>
                 </div>
 
                         
