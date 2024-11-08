@@ -14,7 +14,7 @@ function ContactUs() {
     <div classNameName="ContactUs h-screen">
       
       <Navbar/>
-      <div className="">
+      <div className="mb-10">
         <div className="flex items-center justify-center w-full">
           <div className="w-full h-auto rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl">
             {/* Company's Logo */}
@@ -93,70 +93,10 @@ function ContactUs() {
         </div>
       </div>
 
-      {/* Map Section */}
-      <div className="ContactUs h-screen">
-        <div className="flex justify-center items-center mt-4">
-          <MapContainer
-            center={[6.3627, 2.4310]}  // Centré sur l'adresse 9F74+4QM, Rue 1682B, Cotonou, Bénin
-            zoom={13}
-            scrollWheelZoom={false}
-            className="w-full h-screen rounded-xl shadow-lg"
-          >
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-          </MapContainer>
-        </div>
-      </div>
-      {/* <div className="ContactUs h-screen">
-        <div className="flex justify-center items-center mt-4">
-          <MapContainer
-            center={[6.3627, 2.4310]}
-            zoom={13}
-            scrollWheelZoom={false}
-            className="w-full h-screen rounded-xl shadow-lg"
-          >
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-          </MapContainer>
-        </div>
-      </div> */}
-
-
 
       {/* Footer */}
-      <div className="relative top-[100px] bg-lime-200 text-black w-full h-96 grid grid-cols-4 gap-10 flex justify-center items-center">
-        <img className="h-24 mx-auto" src={logo} alt="Logo" />
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">À propos de nous</h2>
-          <p>
-            Nous sommes une entreprise de nettoyage professionnelle dédiée à fournir des services
-            de haute qualité avec des pratiques respectueuses de l'environnement.
-          </p>
-        </div>
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">Navigation</h2>
-          <ul>
-            <li><Link to="/home" className="hover:text-blue-500">Accueil</Link></li>
-            <li><Link to="/aboutus" className="hover:text-blue-500">A Propos</Link></li>
-            <li><Link to="/services" className="hover:text-blue-500">Nos Services</Link></li>
-            <li><Link to="/partners" className="hover:text-blue-500">Nos Références</Link></li>
-            <li><Link to="/contactus" className="hover:text-blue-500">Contactez-nous</Link></li>
-          </ul>
-        </div>
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">Réseaux sociaux</h2>
-          <ul>
-            <li><a href="https://www.facebook.com/CJessougnon?mibextid=LQQJ4d" className="hover:text-blue-500">Facebook</a></li>
-            <li><a href="tel:+229 62 31 5172" className="hover:text-blue-500">WhatsApp</a></li>
-            <li><a href="https://www.linkedin.com/company/cipa-jessougnon-sa/" className="hover:text-blue-500">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/cjessougnon?igsh=MTVvdDkyYXdyYXl2NQ==" className="hover:text-blue-500">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
+      <Footer/>
+                
 
     </div>
   );
